@@ -20,19 +20,17 @@
   			</li>
   		</ul>
   		<ul class="user-navigation">
-  			<li class="user-navigation"><a class="information-button" href="#">
+  			<li class="user-navigation-link"><input type="button" name="search">class="information-button" href="#">
   				<img src="logo.svg" alt="Иконка поиска">
-  			</a>
   			</li>
-  			<li class="user-navigation"><a class="information-button" href="#">
+  			<li class="user-navigation-link"><a class="information-button" href="#">
   				<img src="logo.svg">Вход</a>>
   			</li>
-  			<li class="user-navigation"><a class="information-button" href="#">
+  			<li class="user-navigation-link"><a class="information-button" href="#">
   				<img src="logo.svg">2 товара</a></li>
   		</ul>
   	</nav>
   </header>
-  <main class="container">
   	<ul><!-- class="?"-->
   		<li><a href="#">Главная</a></li>
   		<li><a href="#">Каталог</a></li>
@@ -41,176 +39,175 @@
   	<h1 class="page-title">Сливочное мороженое</h1>
   	<section class="catalog">
   	<h2 class="visually-hidden">Каталог</h2>
-  	<ul class="catalog"><!-- Может ли быть у секции и списка в этой секции одинаковый class, без уточнения class-такой-то?-->
+  	<main class="container">
+  	<ul class="catalog-list">
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>310Р</b>/кг</span>
-  				<!-- <span class="catalog-item-price">310P</span>
-  				<span class="catalog-item-price-kilogram">кг</span>!-->
+  				<span class="catalog-item-style"><b>310Р</b>/кг</span>
   			</p>
-  			<h3><!-- По логике <h3> должно быть название продукта, а не цена, но цена стоит первой в ячейке. При этом <p>(цена), относящемуся к <h>(<h3>), не желательно стоять перед ним(<h3>).-->
+  			<h3>
   				<a class="product-link" href="#">
   					<span class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>380Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>380Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочно-кофейное с кусочками шоколада"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>355Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>355Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>415Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>415Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочное крем-брюле с карамельной подливкой"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>325Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>325Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочное с брусничным джемом</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочное с брусничным джемом"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>410Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>410Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочно-черничное с цельными ягодами черники</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочно-черничное с цельными ягодами черники"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>375Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>375Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочно-лимонное с карамельной присыпкой</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочно-лимонное с карамельной присыпкой"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>320Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>320Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочное с шоколадной стружкой</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочное с шоколадной стружкой"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>440Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>440Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочно-ванильное с кусочками шоколада</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочно-ванильное с кусочками шоколада"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>435Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>435Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочное с ментоловым сиропом</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочное с ментоловым сиропом"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>355Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>355Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочное с кусочками чёрного шоколада</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочное с кусочками чёрного шоколада"></a>
-  			</p>
+  			</div>
   		</li>
   		<li class="catalog-item">
   			<p class="catalog-item-price">
-  				<span class="catalog-item-price"><b>420Р</b>/кг</span>
+  				<span class="catalog-item-style"><b>420Р</b>/кг</span>
   			</p>
   			<h3>
-  				<a class="product-link" href="#">
+  				<a class="catalog-item-link" href="#">
   					<span class="catalog-item-title">Сливочное с мятным сиропом</span>
   				</a>
   			</h3>
-  			<p class="catalog-item-img">
-  			<a class="product-link-img" href="#">
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#">
   			<img src="img.svg" alt="Сливочное с мятным сиропом"></a>
-  			</p>
+  			</div>
   		</li>
 
   	</ul>
