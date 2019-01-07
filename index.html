@@ -7,8 +7,8 @@
   <body>
    <header class="header">
   	<nav class="navigation">
-  		<a class="header-logo">
-  		 <img src="logo.svg" alt="Логотип магазина «Глейси»">
+  		<a class="header-logo" aria-label="Логотип магазина «Глейси»">
+  		 <img src="img/logo.svg" alt="Логотип магазина «Глейси»">
   		</a>
   		<ul class="navigation-links">
   			<li class="navigation-item">
@@ -20,15 +20,15 @@
   			</li>
   		</ul>
   		<ul class="user-navigation">
-  			<li class="user-navigation"><input type="button" name="search">
-  				<img src="loupe.svg" alt="Иконка лупы">
+  			<li class="user-navigation"><button aria-label="Поиск">
+  				<img src="img/loupe.svg" alt="Иконка лупы"></button>
   			</a>
   			</li>
   			<li class="user-navigation"><a class="information-button" href="#">
-  				<img src="entrance.svg">Вход</a>
+  				<img src="img/entrance.svg">Вход</a>
   			</li>
-  			<li class="user-navigation"><a class="information-button" href="#">
-  				<img src="basket.svg">Пусто</a></li>
+  			<li class="user-navigation"><a class="information-button" href="#" aria-label="Корзина товаров">
+  				<img src="img/basket.svg">Пусто</a></li>
   		</ul>
   	</nav>
   </header>
@@ -36,23 +36,23 @@
   	 <!-- <h1></h1> ... <h2></h2> ... <h3></h3> !-->
   	 <section class="features">
         <h4 class="visually-hidden">Преимущества</h4>
-        <p>Магазин Глейси - это офлайн-магазин по продаже мороженного собственного производства на развес</p>
+        <p>Магазин Глейси - это офлайн-магазин по продаже мороженого собственного производства на развес</p>
   		<ul class="features-list">
   		<li>
-  			<p class="features-item">
-  				<a class="instruments-img/logo">
-  					<img src="ice-cream.svg"></a>Всё наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-  			<p class="features-item">
-  				<a class="instruments-img/logo">
-  					<img src="cow.svg"></a>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+  			<p class="features-item">Всё наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+  				<div class="instruments-img">
+  					<img src="img/ice-cream.svg"></div> 
+  			<p class="features-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+  				<div class="instruments-img">
+  					<img src="img/cow.svg"></div>
   		</li>
   		<li>
-  			<p class="features-item">
-  				<a class="instruments-img/logo">
-  					<img src="eco.svg"></a>Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиентыи добавки произведены из натурального, экологически чистого сырья.</p>>
-  			<p class="features-item">
-  				<a class="instruments-img/logo">
-  					<img src="thermometer.svg"></a>Дстовка нашего мороженного осуществляется в специальном термопаке, которые не даёт мороженному растаять в пути и позволяет сохранитьпревосходный вкус.</p>
+  			<p class="features-item">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиентыи добавки произведены из натурального, экологически чистого сырья.</p>
+  			<div class="instruments-img">
+  					<img src="img/eco.svg"></div>
+  			<p class="features-item">Доставка нашего мороженного осуществляется в специальном термопаке, которые не даёт мороженному растаять в пути и позволяет сохранитьпревосходный вкус.</p>
+  				<div class="instruments-img">
+  					<img src="img/thermometer.svg"></div>
   		</li>
   	</ul>
   	</h4>
@@ -66,9 +66,7 @@
   <section class="appointment">
   	<h5>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</h5>
   		<p class="appointment-into">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-  		<!-- ? !-->
-
-  			<a href="#"><!--class="?"!-->Отправить</a>
+  		<a href="#"><!--class="?"!-->Отправить</a>
   </section>
 
   	<!-- <h6>
@@ -78,17 +76,17 @@
   	<footer class="main-footer">
   		<div class="footer-social">
   			<ul>
-  				<li><a class="social-button" href="#"><img src="twitter.svg">Твиттер</a></li>
-  				<li><a class="social-button" href="#"><img src="instagram.svg">Инстаграм</a></li>
-  				<li><a class="social-button" href="#"><img src="vk.svg">Вконтакте</a></li>
-  				<li><a class="social-button" href="#"><img src="fb.svg">Фейсбук</a></li>
+  				<li><a class="social-button" href="#" aria-label="ссылка, Твиттер магазина «Глейси»"><img src="img/twitter.svg"></a></li>
+  				<li><a class="social-button" href="#" aria-label="ссылка, Инстаграм магазина «Глейси»"><img src="img/instagram.svg"></a></li>
+  				<li><a class="social-button" href="#" aria-label="ссылка, Вконтакте магазина «Глейси»"><img src="img/vk.svg"></a></li>
+  				<li><a class="social-button" href="#" aria-label="ссылка, Фейсбук магазина «Глейси»"><img src="img/fb.svg"></a></li>
   			</ul>
   		</div>
   		<ul class="footer-information">
   			<li>
   				<p>
   					<a class="information-link" href="#"> <!--class="instruments-img/logo"!-->
-  					<img src="heart.svg">Для поставщиков</a></p>
+  					<img src="img/heart.svg">Для поставщиков</a></p>
   				<p><a class="information-link" href="#">Наши документы</a></p>
   			</li>
   			<li>
@@ -97,7 +95,7 @@
   			</li>
   		</ul>
   		<p class="footer-copyright">
-  			<a class="footer-logo-copyright" href="https://htmlacademy.ru"><img src="logo-htmlacademy.svg">Сделано в HTML Academy 2017</a>	
+  			<a class="footer-logo-copyright" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" aria-label="ссылка, контакты создателей данного сайта">Сделано в HTML Academy 2017</a>	
   		</p>
   	</footer>
 
