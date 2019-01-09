@@ -4,6 +4,19 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
+    <form action="#" method="post">
+	<h1>Мы обязательно вам ответим!</h1>
+    <br>
+      <input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
+    <br>
+    <br>
+      <input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required>
+    <br>
+    <br>
+      <textarea name="comment" id="comment-field" placeholder="Напишите что-нибудь..." rows="5"></textarea>
+    <br>
+      <input type="submit" value="Отправить">
+    </form>
   <body>
    <header class="header">
   	<nav class="navigation">
@@ -13,6 +26,19 @@
   		<ul class="navigation-links">
   			<li class="navigation-item">
   				<a href="catalog.html">Каталог</a>
+  				<form action="https://echo.htmlacademy.ru">
+  				<div class="catalog-menu">
+  					<a class="catalog-menu-item" href="#"><b>Новинки</b></a>
+  					<br><hr>
+  					<a class="catalog-menu-item" href="#">Сливочное</a>
+  					<br>
+  					<a class="catalog-menu-item" href="#">Щербеты</a>
+  					<br>
+  					<a class="catalog-menu-item" href="#">Фруктовый лёд</a>
+  					<br>
+  					<a class="catalog-menu-item" href="#">Мелорин</a>
+  				</div>
+  				</form>
   			</li>
   			<li class="navigation-item"><a href="delivery.payment.html">Доставка и оплата</a>
   			</li>
@@ -22,10 +48,25 @@
   		<ul class="user-navigation">
   			<li class="user-navigation"><button aria-label="Поиск">
   				<img src="img/loupe.svg" alt="Иконка лупы"></button>
+  				<form action="#" method="get">
+  					<input type="search" name="search" id="search" value="Что ищем?" list="#">
+  				</form>
   			</a>
   			</li>
   			<li class="user-navigation"><a class="information-button" href="#">
   				<img src="img/entrance.svg">Вход</a>
+  				<form action="#" method="post">
+  					<input type="text" name="email" id="email-field" placeholder="Электронная почта?" required>
+  					<br>
+  					<br>
+  					<input type="text" name="password" id="password-field" placeholder="Пароль">
+  					<br>
+  					<br>
+  					<input type="submit" value="Войти">
+  					<ul class="form-regist">
+  						<li><a class="form-regist-item" href="#">Забыли пароль?</a></li>
+  						<li><a class="form-regist-item" href="#">Новая регистрация</a></li>
+  				</form>
   			</li>
   			<li class="user-navigation"><a class="information-button" href="#" aria-label="Корзина товаров">
   				<img src="img/basket.svg">Пусто</a></li>
@@ -107,6 +148,5 @@
   			<a class="footer-logo-copyright" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" aria-label="Контакты создателей данного сайта">Сделано в HTML Academy 2017</a>	
   		</p>
   	</footer>
-
   </body>
 </html>
