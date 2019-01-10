@@ -4,40 +4,23 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-    <form action="#" method="post">
-    	<h1>Мы обязательно вам ответим!</h1>
-    <br>
-      <input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
-    <br>
-    <br>
-      <input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required>
-    <br>
-    <br>
-      <textarea name="comment" id="comment-field" placeholder="Напишите что-нибудь..." rows="5"></textarea>
-    <br>
-      <input type="submit" value="Отправить">
-    </form>
   <body>
    <header class="header">
   	<nav class="navigation">
   		<a class="header-logo">
-  		 <img src="img/logo.svg" alt="Логотип магазина «Глейси»">
+  		 <img src="img/logo.svg" alt="«Глейси»" width="" height="">
   		</a>
   		<ul class="navigation-links">
   			<li class="navigation-item">
   				<a href="catalog.html">Каталог</a>
-  				<form action="https://echo.htmlacademy.ru">
-  				<div class="catalog-menu">
-  					<a class="catalog-menu-item" href="#"><b>Новинки</b></a>
-  					<br><hr>
-  					<a class="catalog-menu-item" href="#">Сливочное</a>
-  					<br>
-  					<a class="catalog-menu-item" href="#">Щербеты</a>
-  					<br>
-  					<a class="catalog-menu-item" href="#">Фруктовый лёд</a>
-  					<br>
-  					<a class="catalog-menu-item" href="#">Мелорин</a>
-  				</div>
+  				<form action="#">
+  				<ul class="catalog-menu">
+  					<li><a class="catalog-menu-item" href="#"><b>Новинки</b></a></li><hr>
+  					<li><a class="catalog-menu-item" href="#">Сливочное</a></li>
+  					<li><a class="catalog-menu-item" href="#">Щербеты</a></li>
+  					<li><a class="catalog-menu-item" href="#">Фруктовый лёд</a></li>
+  					<li><a class="catalog-menu-item" href="#">Мелорин</a></li>
+  				</ul>
   				</form>
   			</li>
   			<li class="navigation-item"><a href="delivery.payment.html">Доставка и оплата</a>
@@ -57,11 +40,7 @@
   				<img src="img/entrance.svg">Вход</a>
   				<form action="#" method="post">
   					<input type="text" name="email" id="email-field" placeholder="Электронная почта?" required>
-  					<br>
-  					<br>
   					<input type="text" name="password" id="password-field" placeholder="Пароль">
-  					<br>
-  					<br>
   					<input type="submit" value="Войти">
   					<ul class="form-regist">
   						<li><a class="form-regist-item" href="#">Забыли пароль?</a></li>
@@ -74,11 +53,10 @@
   	</nav>
   </header>
   <ul class="contacts">
-  	<li>С 10 до 20, ежедневно</li>
-  	<li><span class="contacts-number">8 812 450-25-25</span></li>
+  	<li class="contacts-item">С 10 до 20, ежедневно</li>
+  	<li class="contacts-item"><span class="contacts-number">8 812 450-25-25</span></li>
   </ul>
   <main class="container">
-  	 <!-- <h1></h1> ... <h2></h2> ... <h3></h3> !-->
   	 <section class="features">
         <h4 class="visually-hidden">Преимущества</h4>
         <p>Магазин Глейси - это офлайн-магазин по продаже мороженого собственного производства на развес</p>
@@ -104,24 +82,17 @@
   </section>
   <section class="gallery">
   	<h5>Новое в нашем блоге</h5>
-  		<a href="#">10 способов сортировки щербетов к столу
-  			<!--class="?"!-->
+  		<a class="news-link" href="#">10 способов сортировки щербетов к столу
   		</a>
   </section>
   <section class="appointment">
   	<h5>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</h5>
   		<p class="appointment-into">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-  		<br>
-  		<br>
   		<form action="#" method="post">
   			<input type="text" name="login" id="login-field" placeholder="Электронная почта">
   			<input type="submit" value="Отправить">
   		</form>
   	</section>
-
-  	<!-- <h6>
-  	<section class="contacts">
-  	</h6> !-->
   	</main>
   	<footer class="main-footer">
   		<div class="footer-social">
@@ -135,8 +106,8 @@
   		<ul class="footer-information">
   			<li>
   				<p>
-  					<a class="information-link" href="#"> <!--class="instruments-img/logo"!-->
-  					<img src="img/heart.svg">Для поставщиков</a></p>
+  					<a class="information-link" href="#">
+  					<img class="footer-img" src="img/heart.svg">Для поставщиков</a></p>
   				<p><a class="information-link" href="#">Наши документы</a></p>
   			</li>
   			<li>
@@ -148,5 +119,12 @@
   			<a class="footer-logo-copyright" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" aria-label="Контакты создателей данного сайта">Сделано в HTML Academy 2017</a>	
   		</p>
   	</footer>
+  	<form action="#" method="post">
+    	<h1 class="page-title h-index-form">Мы обязательно вам ответим!</h1>
+    	<input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
+    	<input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required>
+    	<textarea name="comment" id="comment-field" placeholder="Напишите что-нибудь..." rows="5"></textarea>
+    	<input type="submit" value="Отправить">
+    </form>
   </body>
 </html>
