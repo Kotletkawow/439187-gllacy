@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
    <header class="header">
@@ -11,7 +13,7 @@
   		 <img src="img/logo.svg" alt="«Глейси»" width="154" height="64">
   		</a>
   		<ul class="navigation-links">
-  			<li class="navigation-item">
+  			<li class="navigation-item catalog">
   				<a href="catalog.html">Каталог</a>
   				<ul class="catalog-menu">
   					<li><a class="catalog-menu-item" href="#"><b>Новинки</b></a></li><hr>
@@ -27,8 +29,8 @@
   			</li>
   		</ul>
   		<ul class="user-navigation">
-  			<li class="user-navigation"><button aria-label="Поиск">
-  				<img src="img/loupe.svg" alt="Иконка лупы" width="" height=""></button>
+  			<li class="user-navigation"><button class="information-button" aria-label="Поиск">
+  				<img src="img/loupe.svg" alt="Иконка лупы" width="17" height="17"></button>
   				<div class="popup">
   					<div class="popup-content">
   						<form action="#" method="get">
@@ -39,18 +41,18 @@
   			</a>
   			</li>
   			<li class="user-navigation"><a class="information-button" href="#">
-  				<img src="img/entrance.svg" width="" height="">Вход</a>
+  				<img src="img/entrance.svg" width="21" height="19">Вход</a>
   				<form action="#" method="post">
   					<input type="text" name="email" id="email-field" placeholder="Электронная почта?" required>
   					<input type="text" name="password" id="password-field" placeholder="Пароль">
-  					<input type="submit" value="Войти">
+  					<input class="button-form" type="submit" value="Войти">
   					<ul class="form-regist">
   						<li><a class="form-regist-item" href="#">Забыли пароль?</a></li>
   						<li><a class="form-regist-item" href="#">Новая регистрация</a></li>
   				</form>
   			</li>
   			<li class="user-navigation"><a class="information-button" href="#" aria-label="Корзина товаров">
-  				<img src="img/basket.svg" width="" height="">Пусто</a></li>
+  				<img src="img/basket.svg" width="21" height="20">Пусто</a></li>
   		</ul>
   	</nav>
   </header>
@@ -61,7 +63,7 @@
   <main class="container">
   	 <section class="features">
         <h4 class="visually-hidden">Преимущества</h4>
-        <p>Магазин Глейси - это офлайн-магазин по продаже мороженого собственного производства на развес</p>
+        <p class="features-title">Магазин Глейси - это офлайн-магазин по продаже мороженого собственного производства на развес</p>
   		<ul class="features-list">
   		<li>
   			<p class="features-item">Всё наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -112,8 +114,8 @@
   		<ul class="footer-information">
   			<li>
   				<p>
-  					<a class="information-link" href="#">
-  					<img class="footer-img" src="img/heart.svg">Для поставщиков</a></p>
+  					<a class="information-link information-link-cooperation" href="#">
+  					<img class="footer-img" src="img/heart.svg" width="15" height="13">Для поставщиков</a></p>
   				<p><a class="information-link" href="#">Наши документы</a></p>
   			</li>
   			<li>
@@ -132,7 +134,7 @@
   				<input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
   				<input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required>
   				<textarea name="comment" id="comment-field" placeholder="Напишите что-нибудь..." rows="5"></textarea>
-  				<input type="submit" value="Отправить">
+  				<input class="button-form" type="submit" value="Отправить">
   			</form>
   		</div>
   	</div>
