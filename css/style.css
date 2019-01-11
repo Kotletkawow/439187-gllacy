@@ -1,0 +1,102 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  
+}
+body,
+header,
+footer{
+  background-color: #849d8f;
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+a:hover,
+a:focus,
+a:active {
+	color: #ed5b3d
+}
+
+.social-button {
+	color: #e6ebe9;
+}
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: Medium;
+  }
+.information-link-cooperation{
+  font-weight: Bold;
+  }
+.information-link {
+  font-size: 13px;
+  line-height: 16px;
+  }
+.footer-logo-copyright {
+  font-size: 12px;
+  line-height: 16px;
+  }
+.h-catalog {
+  font-size: 35px;
+  line-height: 41px;
+  }
+.navigation-item {
+  font-size: 16px;
+  line-height: 18px;
+  }
+.navigation-page {
+  font-size: 14px;
+  line-height: 16px;
+  }
+.features-title,
+.news-link {
+  font-size: 24px;
+  line-height: 30px;
+  }
+.catalog-item-style {
+  font-size: 45px;
+  line-height: 45px;
+  }
+table {
+  font-size: 13px;
+  line-height: 16px;
+  }
+.basket-cost {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: Bold;
+  }
+
+.button-form {
+  font: inherit;
+  text-align: center;
+  background-color: #ed5b3d;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: Bold;
+  }
+.button-form:hover,
+.button-form:focus,
+.button-form:active {
+	color: #ed5b3d
+}
+  
+.navigation-item,
+.contacts-item,
+.page-title,
+.news-link {
+  font-weight: Bold;
+  } 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
