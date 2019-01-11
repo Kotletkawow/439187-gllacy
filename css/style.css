@@ -77,19 +77,19 @@ table {
   font-size: 18px;
   line-height: 24px;
   font-weight: Bold;
-  }
+}
 .button-form:hover,
 .button-form:focus,
 .button-form:active {
 	color: #ed5b3d
 }
-  
+ 
 .navigation-item,
 .contacts-item,
 .page-title,
 .news-link {
   font-weight: Bold;
-  } 
+} 
 .visually-hidden {
 	position: absolute;
 	width: 1px;
