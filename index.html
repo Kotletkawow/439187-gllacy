@@ -8,12 +8,11 @@
    <header class="header">
   	<nav class="navigation">
   		<a class="header-logo">
-  		 <img src="img/logo.svg" alt="«Глейси»" width="" height="">
+  		 <img src="img/logo.svg" alt="«Глейси»" width="154" height="64">
   		</a>
   		<ul class="navigation-links">
   			<li class="navigation-item">
   				<a href="catalog.html">Каталог</a>
-  				<form action="#">
   				<ul class="catalog-menu">
   					<li><a class="catalog-menu-item" href="#"><b>Новинки</b></a></li><hr>
   					<li><a class="catalog-menu-item" href="#">Сливочное</a></li>
@@ -21,7 +20,6 @@
   					<li><a class="catalog-menu-item" href="#">Фруктовый лёд</a></li>
   					<li><a class="catalog-menu-item" href="#">Мелорин</a></li>
   				</ul>
-  				</form>
   			</li>
   			<li class="navigation-item"><a href="delivery.payment.html">Доставка и оплата</a>
   			</li>
@@ -30,14 +28,18 @@
   		</ul>
   		<ul class="user-navigation">
   			<li class="user-navigation"><button aria-label="Поиск">
-  				<img src="img/loupe.svg" alt="Иконка лупы"></button>
-  				<form action="#" method="get">
-  					<input type="search" name="search" id="search" value="Что ищем?" list="#">
-  				</form>
+  				<img src="img/loupe.svg" alt="Иконка лупы" width="" height=""></button>
+  				<div class="popup">
+  					<div class="popup-content">
+  						<form action="#" method="get">
+  							<input type="search" name="search" id="search" value="Что ищем?" list="#">
+  						</form>
+  					</div>
+  				</div>
   			</a>
   			</li>
   			<li class="user-navigation"><a class="information-button" href="#">
-  				<img src="img/entrance.svg">Вход</a>
+  				<img src="img/entrance.svg" width="" height="">Вход</a>
   				<form action="#" method="post">
   					<input type="text" name="email" id="email-field" placeholder="Электронная почта?" required>
   					<input type="text" name="password" id="password-field" placeholder="Пароль">
@@ -48,7 +50,7 @@
   				</form>
   			</li>
   			<li class="user-navigation"><a class="information-button" href="#" aria-label="Корзина товаров">
-  				<img src="img/basket.svg">Пусто</a></li>
+  				<img src="img/basket.svg" width="" height="">Пусто</a></li>
   		</ul>
   	</nav>
   </header>
@@ -64,18 +66,18 @@
   		<li>
   			<p class="features-item">Всё наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
   				<div class="instruments-img">
-  					<img src="img/ice-cream.svg"></div> 
+  					<img src="img/ice-cream.svg" width="49" height="49"></div> 
   			<p class="features-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-  				<div class="instruments-img">
-  					<img src="img/cow.svg"></div>
+  				<div class="instruments-img" width="" height="">
+  					<img src="img/cow.svg" width="49" height="49"></div>
   		</li>
   		<li>
   			<p class="features-item">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиентыи добавки произведены из натурального, экологически чистого сырья.</p>
   			<div class="instruments-img">
-  					<img src="img/eco.svg"></div>
+  					<img src="img/eco.svg" width="49" height="49"></div>
   			<p class="features-item">Доставка нашего мороженного осуществляется в специальном термопаке, которые не даёт мороженному растаять в пути и позволяет сохранитьпревосходный вкус.</p>
   				<div class="instruments-img">
-  					<img src="img/thermometer.svg"></div>
+  					<img src="img/thermometer.svg" width="49" height="49"></div>
   		</li>
   	</ul>
   	</h4>
@@ -88,19 +90,23 @@
   <section class="appointment">
   	<h5>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</h5>
   		<p class="appointment-into">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-  		<form action="#" method="post">
-  			<input type="text" name="login" id="login-field" placeholder="Электронная почта">
-  			<input type="submit" value="Отправить">
-  		</form>
+  		<div class="popup">
+  			<div class="popup-content">
+  				<form action="#" method="post">
+  					<input type="text" name="login" id="login-field" placeholder="Электронная почта">
+  					<input type="submit" value="Отправить">
+  				</form>
+  			</div>
+  		</div>
   	</section>
   	</main>
   	<footer class="main-footer">
   		<div class="footer-social">
   			<ul>
-  				<li><a class="social-button" href="#" aria-label="Твиттер магазина «Глейси»"><img src="img/twitter.svg"></a></li>
-  				<li><a class="social-button" href="#" aria-label="Инстаграм магазина «Глейси»"><img src="img/instagram.svg"></a></li>
-  				<li><a class="social-button" href="#" aria-label="Вконтакте магазина «Глейси»"><img src="img/vk.svg"></a></li>
-  				<li><a class="social-button" href="#" aria-label="Фейсбук магазина «Глейси»"><img src="img/fb.svg"></a></li>
+  				<li><a class="social-button" href="#" aria-label="Твиттер магазина «Глейси»"><img src="img/twitter.svg" width="32" height="32"></a></li>
+  				<li><a class="social-button" href="#" aria-label="Инстаграм магазина «Глейси»"><img src="img/instagram.svg" width="32" height="32"></a></li>
+  				<li><a class="social-button" href="#" aria-label="Вконтакте магазина «Глейси»"><img src="img/vk.svg" width="32" height="32"></a></li>
+  				<li><a class="social-button" href="#" aria-label="Фейсбук магазина «Глейси»"><img src="img/fb.svg" width="32" height="32"></a></li>
   			</ul>
   		</div>
   		<ul class="footer-information">
@@ -116,15 +122,19 @@
   			</li>
   		</ul>
   		<p class="footer-copyright">
-  			<a class="footer-logo-copyright" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" aria-label="Контакты создателей данного сайта">Сделано в HTML Academy 2017</a>	
+  			<a class="footer-logo-copyright" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" aria-label="Контакты создателей данного сайта" width="108" height="39">Сделано в HTML Academy 2017</a>	
   		</p>
   	</footer>
-  	<form action="#" method="post">
-    	<h1 class="page-title h-index-form">Мы обязательно вам ответим!</h1>
-    	<input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
-    	<input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required>
-    	<textarea name="comment" id="comment-field" placeholder="Напишите что-нибудь..." rows="5"></textarea>
-    	<input type="submit" value="Отправить">
-    </form>
+  	<div class="popup">
+  		<div class="popup-content">
+  			<form action="#" method="post">
+  				<h1 class="page-title h-index-form">Мы обязательно вам ответим!</h1>
+  				<input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
+  				<input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required>
+  				<textarea name="comment" id="comment-field" placeholder="Напишите что-нибудь..." rows="5"></textarea>
+  				<input type="submit" value="Отправить">
+  			</form>
+  		</div>
+  	</div>
   </body>
 </html>
