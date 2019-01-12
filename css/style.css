@@ -3,34 +3,49 @@ body{
   padding: 0;
   font-size: 16px;
   line-height: 22px;
-  
-}
-body,
-header,
-footer{
+  color: #ffffff;
   background-color: #849d8f;
-}
-a {
+ }
+.link-light {
 	text-decoration: none;
 	color: #ffffff;
+} 
+.link-light:hover,
+.link-light:focus,
+.link-light:active {
+	color: #ed5b3d;
 }
-a:hover,
-a:focus,
-a:active {
-	color: #ed5b3d
+.link-dark {
+	text-decoration: none;
+	color: #000000;
+} 
+.link-dark:hover,
+.link-dark:focus,
+.link-dark:active {
+	color: #ed5b3d;
 }
 
 .social-button {
 	color: #e6ebe9;
 }
-.user-navigation {
+.user-navigation-link {
   font-size: 14px;
   line-height: 16px;
-  font-weight: Medium;
+  font-weight: 500;
   }
 .information-link-cooperation{
-  font-weight: Bold;
+  font-weight: 700;
   }
+.catalog-item-title {
+	font-weight: 500;
+	color: #ffffff;
+}
+.catalog-item-title:hover,
+.catalog-item-title:focus,
+.catalog-item-title:active {
+	color: #ed5b3d;
+}
+
 .information-link {
   font-size: 13px;
   line-height: 16px;
@@ -67,29 +82,23 @@ table {
 .basket-cost {
   font-size: 15px;
   line-height: 18px;
-  font-weight: Bold;
+  font-weight: 700;
   }
 
 .button-form {
-  font: inherit;
   text-align: center;
   background-color: #ed5b3d;
   font-size: 18px;
   line-height: 24px;
-  font-weight: Bold;
+  font-weight: 700;
+  color: #ffffff;
 }
 .button-form:hover,
 .button-form:focus,
 .button-form:active {
-	color: #ed5b3d
+	color: #ffffff;
 }
- 
-.navigation-item,
-.contacts-item,
-.page-title,
-.news-link {
-  font-weight: Bold;
-} 
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -100,3 +109,16 @@ table {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+.text-bold {
+  font-weight: 700;
+  }
+.text-medium {
+  font-weight: 500;
+  }
+.text-regular {
+  font-weight: 400;
+  }
+.text-dark {
+	color: #000000;
+}
+
