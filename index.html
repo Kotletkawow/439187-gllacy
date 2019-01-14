@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">  </head>
+    <link href="css/outline.css" rel="stylesheet">
   <body>
    <header class="header">
   	<nav class="navigation">
@@ -37,7 +38,7 @@
   				<div class="popup">
   					<div class="popup-content">
   						<form action="#" method="get" text-dark text-regular>
-  							<input type="search" name="search" id="search" value="Что ищем?" list="#">
+  							<input type="search" name="search" id="search" placeholder="Что ищем?" list="#" autocomplete="on" autofocus>
   						</form>
   					</div>
   				</div>
@@ -45,14 +46,19 @@
   			</li>
   			<li class="user-navigation"><a class="information-button" href="#">
   				<img src="img/entrance.svg" width="21" height="19">Вход</a>
-  				<form action="#" method="post" text-dark text-regular>
-  					<input type="text" name="email" id="email-field" placeholder="Электронная почта?" required>
-  					<input type="text" name="password" id="password-field" placeholder="Пароль">
-  					<input class="button-form" type="submit" value="Войти">
-  					<ul class="form-regist">
-  						<li><a class="form-regist-item link-dark" href="#">Забыли пароль?</a></li>
-  						<li><a class="form-regist-item link-dark" href="#">Новая регистрация</a></li>
-  				</form>
+  				<div class="popup">
+  					<div class="popup-content">
+  						<form action="#" method="post" text-dark text-regular>
+  							<input type="text" name="email" id="email-field" placeholder="Электронная почта?" required  autocomplete="on" autofocus>
+  							<input type="text" name="password" id="password-field" placeholder="Пароль" required  autocomplete="on">
+  							<input class="button-form" type="submit" value="Войти">
+  							<ul class="form-regist">
+  								<li><a class="form-regist-item link-dark" href="#">Забыли пароль?</a></li>
+  								<li><a class="form-regist-item link-dark" href="#">Новая регистрация</a></li>
+  							</ul>
+  						</form>
+  					</div>
+  				</div>
   			</li>
   			<li class="user-navigation"><a class="information-button" href="#" aria-label="Корзина товаров">
   				<img src="img/basket.svg" width="21" height="20">Пусто</a></li>
@@ -63,6 +69,66 @@
   	<li class="contacts-item text-bold">С 10 до 20, ежедневно</li>
   	<li class="contacts-item text-bold"><span class="contacts-number">8 812 450-25-25</span></li>
   </ul>
+  <section class="catalog-promo">
+  	<ul class="catalog-list">
+  		<li class="catalog-item">
+  			<p class="catalog-item-price">
+  				<span class="catalog-item-style"><b>310</b>/кг<img src="img/ruble.svg"></span>
+  			</p>
+  			<h4>
+  				<a class="product-link" href="#" aria-label="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+  					<span class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+  				</a>
+  			</h4>
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#" aria-label="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+  			<img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267"></a>
+  			</div>
+  		</li>
+  		<li class="catalog-item">
+  			<p class="catalog-item-price">
+  				<span class="catalog-item-style"><b>380</b><img src="img/ruble.svg">/кг</span>
+  			</p>
+  			<h4>
+  				<a class="catalog-item-link" href="#" aria-label="Сливочно-кофейное мороженое с кусочками шоколада">
+  					<span class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</span>
+  				</a>
+  			</h4>
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#" aria-label="Сливочно-кофейное мороженое с кусочками шоколада">
+  			<img src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267"></a>
+  			</div>
+  		</li>
+  		<li class="catalog-item">
+  			<p class="catalog-item-price">
+  				<span class="catalog-item-style"><b>355</b><img src="img/ruble.svg">/кг</span>
+  			</p>
+  			<h4>
+  				<a class="catalog-item-link" href="#" aria-label="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+  					<span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
+  				</a>
+  			</h4>
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#" aria-label="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+  			<img src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"></a>
+  			</div>
+  		</li>
+  		<li class="catalog-item">
+  			<p class="catalog-item-price">
+  				<span class="catalog-item-style"><b>415</b><img src="img/ruble.svg">/кг</span>
+  			</p>
+  			<h4>
+  				<a class="catalog-item-link" href="#" aria-label="Сливочное мороженое крем-брюле с карамельной подливкой">
+  					<span class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</span>
+  				</a>
+  			</h4>
+  			<div class="catalog-item-img">
+  			<a class="catalog-item-link-img" href="#" aria-label="Сливочное мороженое крем-брюле с карамельной подливкой">
+  			<img src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267"></a>
+  			</div>
+  		</li>
+  	</ul>
+  </section>
   <main class="container">
   	 <section class="features">
         <h4 class="visually-hidden">Преимущества</h4>
@@ -85,7 +151,6 @@
   					<img src="img/thermometer.svg" width="49" height="49"></div>
   		</li>
   	</ul>
-  	</h4>
   </section>
   <section class="gallery">
   	<h5 class="text-medium">Новое в нашем блоге</h5>
@@ -97,14 +162,14 @@
   		<div class="popup">
   			<div class="popup-content">
   				<form action="#" method="post" text-dark text-regular>
-  					<input type="text" name="login" id="login-field" placeholder="Электронная почта">
-  					<input type="submit" value="Отправить">
+  					<input type="text" name="login" id="login-field" placeholder="Электронная почта" required  autocomplete="on" autofocus>
+  					<input class="button-form" type="submit" value="Отправить">
   				</form>
   			</div>
   		</div>
   	</section>
   	</main>
-  	<footer class="main-footer">
+  	<footer class="footer">
   		<div class="footer-social">
   			<ul>
   				<li><a class="social-button" href="#" aria-label="Твиттер магазина «Глейси»"><img src="img/twitter.svg" width="32" height="32"></a></li>
@@ -131,12 +196,12 @@
   			<a class="footer-logo-copyright text-regular link-light" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" aria-label="Контакты создателей данного сайта" width="108" height="39">Сделано в HTML Academy 2017</a>	
   		</p>
   	</footer>
-  	<div class="popup">
+  	<div class="popup active">
   		<div class="popup-content">
   			<form action="#" method="post" text-dark text-regular>
   				<h1 class="page-title h-index-form">Мы обязательно вам ответим!</h1>
-  				<input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
-  				<input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required>
+  				<input type="text" name="name" id="name-field" placeholder="Как вас зовут?" required autocomplete="on" autofocus>
+  				<input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required autocomplete="on">
   				<textarea name="comment" id="comment-field" placeholder="Напишите что-нибудь..."></textarea>
   				<input class="button-form" type="submit" value="Отправить">
   			</form>

@@ -1,11 +1,14 @@
 body{
   margin: 0;
-  padding: 0;
+
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  font-family: Roboto; sans-serif;
+
   background-color: #849d8f;
-  font-family: Roboto;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .link-light {
 	text-decoration: none;
@@ -99,6 +102,18 @@ table {
 .button-form:active {
 	color: #ffffff;
 }
+.button-form-light {
+  text-align: center;
+  background-color: #ed5b3d;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.button-form-light:hover,
+.button-form-light:focus,
+.button-form-light:active {
+  color: #000000;
 
 .visually-hidden {
 	position: absolute;
@@ -122,4 +137,36 @@ table {
 .text-dark {
 	color: #000000;
 }
+html {
+  width: 1250;
+  height: 2449;
+}
+.filters {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
