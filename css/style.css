@@ -10,6 +10,9 @@ body{
   background-position: top center;
   background-repeat: no-repeat;
 }
+.header {
+
+}
 .link-light {
 	text-decoration: none;
 	color: #ffffff;
@@ -148,6 +151,49 @@ html {
 }
 
 
+
+.promo {
+  height: 535; 
+}
+.advertising {
+  height: 269;
+}
+.catalog-promo {
+  height: 362;
+}
+.features {
+  height: 346;
+}
+.gallery {
+  height: 220;
+}
+.map {
+  height: 470;
+}
+
+
+
+
+.header {
+    width: 1146;
+    height: 73;
+
+  }
+.title-catalog {
+    height: 39;
+}
+.h-catalog {
+    height: 76;
+}
+.filters {
+    height: 170;
+}
+.catalog {
+    height: 1185;
+}
+.footer {
+  height: 108;  
+}
 
 
 
