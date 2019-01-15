@@ -10,6 +10,10 @@ body{
   background-position: top center;
   background-repeat: no-repeat;
 }
+.container {
+  width: 1146;
+  margin: 0 auto;
+}
 .header {
 
 }
@@ -91,7 +95,16 @@ table {
   line-height: 18px;
   font-weight: 700;
   }
-
+.advertising-item {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+.advertising-item-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
 .button-form {
   text-align: center;
   background-color: #ed5b3d;
@@ -107,7 +120,7 @@ table {
 }
 .button-form-light {
   text-align: center;
-  background-color: #ed5b3d;
+  background-color: #849d8f;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -117,6 +130,11 @@ table {
 .button-form-light:focus,
 .button-form-light:active {
   color: #000000;
+}
+.button-form-bg {
+  font-size: 32px;
+  line-height: 44px;
+}
 
 .visually-hidden {
 	position: absolute;
@@ -149,53 +167,99 @@ html {
   line-height: 18px;
   font-weight: 500;
 }
-
-
-
-.promo {
-  height: 535; 
+.navigation-links,
+.catalog-menu,
+.user-navigation,
+.contacts,
+.catalog-list,
+.features-list,
+.footer-list,
+.navigation-page,
+.percent,
+.footer-information {
+  list-style: none;
 }
-.advertising {
-  height: 269;
-}
-.catalog-promo {
-  height: 362;
-}
-.features {
-  height: 346;
-}
-.gallery {
-  height: 220;
-}
-.map {
-  height: 470;
-}
-
-
-
 
 .header {
-    width: 1146;
-    height: 73;
-
-  }
-.title-catalog {
-    height: 39;
+    padding-top: 9px;
+    display: flex;
 }
+.title-catalog {
+    padding-top: 20px;
+    display: flex;
+}
+
+
 .h-catalog {
-    height: 76;
+    padding-top: 14px;
+    display: flex;
 }
 .filters {
-    height: 170;
+    padding-top: 37px;
+    display: flex;
 }
-.catalog {
-    height: 1185;
+.catalog-list {
+    padding-top: 40px;
+    padding-bottom: 56px;
+    display: flex;
+
+    flex-wrap: wrap;
 }
+.catalog-item {
+    align-items: stretch;
+    height: 318;
+    width: 267;
+}
+
 .footer {
-  height: 108;  
+    padding-bottom: 36px;
+    display: flex;
 }
 
+.promo {
+  padding-top: 286px;
 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.advertising {
+  padding-top: 85px;
+  display: flex;
+}
+.catalog-promo {
+  padding-top: 81px;
+  display: flex;
+}
+.features {
+  padding-top: 73px;
+  display: flex;
+}
+.interactive {
+  padding-top: 97px;
+  display: flex;
+}
+.map {
+  min-height: 430px;
+  padding-top: 193px;
+  padding-bottom: 128px;
+  display: flex;
+}
+.container {
+  width: 1146;
+  margin: 0 auto;
+  display: flex;
+}
+.form-proba {
+  display: flex;
+  flex-direction: column;
+}
+.item-proba-one {
+  align-self: flex-start;
+}
+.item-proba-two {
+  align-self: flex-end;
+}
 
 
 
