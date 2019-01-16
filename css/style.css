@@ -13,12 +13,13 @@ body{
 .container {
   width: 1146;
   margin: 0 auto;
+  flex-direction: column;
+
 }
 .header {
 
 }
 .link-light {
-	text-decoration: none;
 	color: #ffffff;
 } 
 .link-light:hover,
@@ -27,7 +28,6 @@ body{
 	color: #ed5b3d;
 }
 .link-dark {
-	text-decoration: none;
 	color: #000000;
 } 
 .link-dark:hover,
@@ -47,13 +47,13 @@ body{
 .information-link-cooperation{
   font-weight: 700;
   }
-.catalog-item-title {
+.catalog-item-link {
 	font-weight: 500;
 	color: #ffffff;
 }
-.catalog-item-title:hover,
-.catalog-item-title:focus,
-.catalog-item-title:active {
+.catalog-item-link:hover,
+.catalog-item-link:focus,
+.catalog-item-link:active {
 	color: #ed5b3d;
 }
 
@@ -86,7 +86,7 @@ body{
   font-size: 45px;
   line-height: 45px;
   }
-table {
+.basket-red {
   font-size: 13px;
   line-height: 16px;
   }
@@ -173,13 +173,20 @@ html {
 .contacts,
 .catalog-list,
 .features-list,
-.footer-list,
+.footer-social,
 .navigation-page,
 .percent,
-.footer-information {
+.footer-information,
+.form-regist-item,
+.information-link,
+.catalog-page-numbers,
+.advertising-item,
+.footer-copyright {
   list-style: none;
 }
 
+
+<<
 .header {
     padding-top: 9px;
     display: flex;
@@ -214,7 +221,35 @@ html {
 .footer {
     padding-bottom: 36px;
     display: flex;
+    justify-content: space-between;
 }
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+}
+.social-button {
+  padding-right: 17px; 
+}
+.footer-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-list {
+  display: flex;
+  flex-direction: row;
+}
+.footer-item {
+  padding-left: 29px; 
+}
+.footer-item-right {
+  padding-left: 40px; 
+}
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .promo {
   padding-top: 286px;
@@ -250,19 +285,15 @@ html {
   margin: 0 auto;
   display: flex;
 }
-.form-proba {
+
+>>
+.catalog-list {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
 }
-.item-proba-one {
-  align-self: flex-start;
+.catalog-item {
+  width: 267;
 }
-.item-proba-two {
-  align-self: flex-end;
-}
-
-
-
 
 
 
