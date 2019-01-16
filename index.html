@@ -76,7 +76,7 @@
   </ul>
   </section>
   <section class="advertising">
-	<ul>
+	<ul class="advertising-list">
 		<li class="advertising-item">
 			<article>
 			<h2 class="">Малинка даром!</h2>
@@ -94,8 +94,8 @@
 	</ul>
 </section>
   <section class="catalog catalog-promo">
-  	<ul class="catalog-list">
-  		<li class="catalog-item">
+  	<ul class="catalog-list-promo">
+  		<li class="catalog-item-promo">
   			<p class="catalog-item-price">
   				<span class="catalog-item-style"><b>310</b><img src="img/ruble.svg"><span>/кг</span></span>
   			</p>
@@ -109,7 +109,7 @@
   			<img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267"></a>
   			</div>
   		</li>
-  		<li class="catalog-item">
+  		<li class="catalog-item-promo">
   			<p class="catalog-item-price">
   				<span class="catalog-item-style"><b>380</b><img src="img/ruble.svg"><span>/кг</span></span>
   			</p>
@@ -123,7 +123,7 @@
   			<img src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267"></a>
   			</div>
   		</li>
-  		<li class="catalog-item">
+  		<li class="catalog-item-promo">
   			<p class="catalog-item-price">
   				<span class="catalog-item-style"><b>355</b><img src="img/ruble.svg"><span>/кг</span></span>
   			</p>
@@ -137,7 +137,7 @@
   			<img src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"></a>
   			</div>
   		</li>
-  		<li class="catalog-item">
+  		<li class="catalog-item-promo">
   			<p class="catalog-item-price">
   				<span class="catalog-item-style"><b>415</b><img src="img/ruble.svg"><span>/кг</span></span>
   			</p>
@@ -155,23 +155,27 @@
   </section>
   	 <section class="features">
         <h4 class="visually-hidden">Преимущества</h4>
-        <p class="features-title text-medium text-dark">Магазин Глейси - это офлайн-магазин по продаже мороженого собственного производства на развес</p>
   		<ul class="features-list text-dark">
-  		<li>
-  			<p class="features-item text-regular">Всё наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-  				<div class="instruments-img">
-  					<img src="img/ice-cream.svg" width="49" height="49"></div> 
-  			<p class="features-item text-regular">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-  				<div class="instruments-img" width="" height="">
-  					<img src="img/cow.svg" width="49" height="49"></div>
-  		</li>
-  		<li>
-  			<p class="features-item text-regular">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиентыи добавки произведены из натурального, экологически чистого сырья.</p>
+  			<p class="features-title text-medium text-dark">Магазин Глейси - это офлайн-магазин по продаже мороженого собственного производства на развес</p>
+  		<li class="features-item">
+  			<p class="features-item text-regular">
   			<div class="instruments-img">
-  					<img src="img/eco.svg" width="49" height="49"></div>
-  			<p class="features-item text-regular">Доставка нашего мороженного осуществляется в специальном термопаке, которые не даёт мороженному растаять в пути и позволяет сохранитьпревосходный вкус.</p>
-  				<div class="instruments-img">
-  					<img src="img/thermometer.svg" width="49" height="49"></div>
+  				<img src="img/ice-cream.svg" width="49" height="49"></div> 
+  			Всё наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+  			<p class="features-item text-regular">
+  			<div class="instruments-img" width="" height="">
+  				<img src="img/cow.svg" width="49" height="49"></div>
+  			Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+  		</li>
+  		<li class="features-item">
+  			<p class="features-item text-regular">
+  			<div class="instruments-img">
+  				<img src="img/eco.svg" width="49" height="49"></div>
+  			Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиентыи добавки произведены из натурального, экологически чистого сырья.</p>
+  			<p class="features-item text-regular">
+  			<div class="instruments-img">
+  				<img src="img/thermometer.svg" width="49" height="49"></div>
+  			Доставка нашего мороженного осуществляется в специальном термопаке, которые не даёт мороженному растаять в пути и позволяет сохранитьпревосходный вкус.</p>
   		</li>
   	</ul>
   </section>
@@ -193,12 +197,12 @@
   </section>
 </main>
 <div class="map">
-	<div class="contacts">
+	<div class="contacts-adress">
 	<h6>Адрес главного офиса и офлайн-магазина:</h6>
 	<p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
 	<h6>Для заказов по телефону:</h6>
 	<p>8 812 450-25-25</p>
-	<span>(с 10 до 20 ежедневно)</span>
+	<p><span>(с 10 до 20 ежедневно)</span></p>
 	<input class="button-form" type="submit" value="Форма обратной связи">
 	</div>
 </div>
@@ -216,11 +220,12 @@
   					<a class="information-link
   					 information-link-cooperation text-bold link-light" href="#">
   					<img class="footer-img" src="img/heart.svg" width="15" height="13">Для поставщиков</a></p>
-  				<p class="footer-item"><a class="information-link link-light" href="#">Наши документы</a></p>
+  					<p><a class="information-link link-light" href="#">О производстве</a></p>
+  					
   			</li>
-  			<li class="footer-list">
-  				<p><a class="information-link link-light" href="#">О производстве</a></p>
-  				<p class="footer-item-right"><a class="information-link link-light" href="#">"Экологические стандарты</a></p>
+  			<li class="footer-list footer-item">
+  				<p><a class="information-link link-light" href="#">Наши документы</a></p>
+  				<p><a class="information-link link-light" href="#">Экологические стандарты</a></p>
   			</li>
   		</ul>
   		<ul class="footer-copyright">

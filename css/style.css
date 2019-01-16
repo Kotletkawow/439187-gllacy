@@ -181,7 +181,8 @@ html {
 .information-link,
 .catalog-page-numbers,
 .advertising-item,
-.footer-copyright {
+.footer-copyright,
+.catalog-item-promo {
   list-style: none;
 }
 
@@ -232,18 +233,17 @@ html {
 }
 .footer-information {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
 }
 .footer-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
 }
 .footer-item {
-  padding-left: 29px; 
+  padding-left: 27px; 
 }
-.footer-item-right {
-  padding-left: 40px; 
+
 }
 .footer-copyright {
   display: flex;
@@ -262,13 +262,33 @@ html {
   padding-top: 85px;
   display: flex;
 }
+.advertising-list {
+  display: flex;
+  justify-content: space-between;
+}
 .catalog-promo {
   padding-top: 81px;
   display: flex;
 }
+.catalog-list-promo {
+  display: flex;
+  justify-content: space-between;
+}
+.catalog-item-promo {
+  width: 267px;
+  padding-right: 26px;
+}
 .features {
   padding-top: 73px;
   display: flex;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+}
+.features-item {
+  display: flex;
+
 }
 .interactive {
   padding-top: 97px;
@@ -279,20 +299,15 @@ html {
   padding-top: 193px;
   padding-bottom: 128px;
   display: flex;
+  justify-content: flex-end;
+}
+.contacts-adress {
+  align-self: flex-end;
 }
 .container {
   width: 1146;
   margin: 0 auto;
   display: flex;
-}
-
->>
-.catalog-list {
-  display: flex;
-  justify-content: flex-start;
-}
-.catalog-item {
-  width: 267;
 }
 
 
