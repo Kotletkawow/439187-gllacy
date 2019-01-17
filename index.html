@@ -16,7 +16,7 @@
   		</a>
   		<ul class="navigation-links text-bold">
   			<li class="navigation-item
-  			 catalog">
+  			 catalog-index">
   				<a class="link-light" href="catalog.html">Каталог</a>
   				<ul class="catalog-menu link-light">
   					<li><a class="catalog-menu-item link-light" href="#"><b>Новинки</b></a></li><hr>
@@ -37,7 +37,7 @@
   			<li class="user-navigation"><button class="information-button" aria-label="Поиск">
   				<img src="img/loupe.svg" alt="Поиск по сайту" width="17" height="17"></button>
   				<div class="popup">
-  					<div class="popup-content">
+  					<div class="popup-content ">
   						<form action="#" method="get" text-dark text-regular>
   							<input type="search" name="search" id="search" placeholder="Что ищем?" list="#" autocomplete="on" autofocus>
   						</form>
@@ -50,13 +50,15 @@
   				<div class="popup">
   					<div class="popup-content">
   						<form class="" action="#" method="post" text-dark text-regular>
+  							<fieldset class="form-regist-one">
   							<input type="text" name="email" id="email-field" placeholder="Электронная почта?" required  autocomplete="on" autofocus>
   							<input type="text" name="password" id="password-field" placeholder="Пароль" required  autocomplete="on">
   							<input class="button-form" type="submit" value="Войти">
-  							<ul class="form-regist">
+  							<ul class="form-regist-two">
   								<li class="form-regist-item"><a class="link-dark" href="#">Забыли пароль?</a></li>
   								<li class="form-regist-item"><a class="link-dark" href="#">Новая регистрация</a></li>
   							</ul>
+  							</fieldset>
   						</form>
   					</div>
   				</div>
@@ -67,13 +69,15 @@
   	</nav>
   </header>
   <section class="promo">
+    <artical>
+			<h1 class="page-title">Крем-брюле и пломбир с малиновым джемом</h1>
+			<input class="button-form" type="submit" value="Давайте оба!">
+	</artical>
   </section>
-  <section>
   <ul class="contacts">
   	<li class="contacts-item text-bold">С 10 до 20, ежедневно</li>
   	<li class="contacts-item text-bold"><span class="contacts-number">8 812 450-25-25</span></li>
   </ul>
-  </section>
   <section class="advertising">
 	<ul class="advertising-list">
 		<li class="advertising-item">
@@ -84,7 +88,7 @@
 			</article>
 		</li>
 		<li class="advertising-item">
-			<article>
+			<article class="">
 			<h2 class="">Шоколадки даром!</h2>
 			<p>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 			<input class="button-form" type="submit" value="Хочу шоколадки!">
@@ -95,9 +99,10 @@
   <section class="catalog catalog-promo">
   	<ul class="catalog-list-promo">
   		<li class="catalog-item-promo">
+  			<img src="img/hit.svg" hred="#">
   			<div class="catalog-item-img">
   			<a class="catalog-item-link-img" href="#" aria-label="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-  			<img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267"></a>
+  			<img class="img-catalog" src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267"></a>
   			</div>
   			<p class="catalog-item-price">
   				<span class="catalog-item-style"><b>310</b><img src="img/ruble.svg"><span>/кг</span></span>
@@ -111,7 +116,7 @@
   		<li class="catalog-item-promo">
   			<div class="catalog-item-img">
   			<a class="catalog-item-link-img" href="#" aria-label="Сливочно-кофейное мороженое с кусочками шоколада">
-  			<img src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267"></a>
+  			<img class="img-catalog" src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267"></a>
   			</div>
   			<p class="catalog-item-price">
   				<span class="catalog-item-style"><b>380</b><img src="img/ruble.svg"><span>/кг</span></span>
@@ -125,7 +130,7 @@
   		<li class="catalog-item-promo">
   			<div class="catalog-item-img">
   			<a class="catalog-item-link-img" href="#" aria-label="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-  			<img src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"></a>
+  			<img class="img-catalog" src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"></a>
   			</div>
   			<p class="catalog-item-price">
   				<span class="catalog-item-style"><b>355</b><img src="img/ruble.svg"><span>/кг</span></span>
@@ -139,7 +144,7 @@
   		<li class="catalog-item-promo">
   			<div class="catalog-item-img">
   			<a class="catalog-item-link-img" href="#" aria-label="Сливочное мороженое крем-брюле с карамельной подливкой">
-  			<img src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267"></a>
+  			<img class="img-catalog" src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267"></a>
   			</div>
   			<p class="catalog-item-price">
   				<span class="catalog-item-style"><b>415</b><img src="img/ruble.svg"><span>/кг</span></span>
@@ -209,7 +214,7 @@
 </div>
 <footer class="footer">
   			<ul class="footer-social link-light">
-  				<li><a class="social-button" href="#" aria-label="Твиттер магазина «Глейси»"><img src="img/twitter.svg" width="32" height="32"></a></li>
+  				<li><a class="social-button" href="#" aria-label="Твиттер магазина «Глейси»"><img class="img-social" src="img/twitter.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Инстаграм магазина «Глейси»"><img src="img/instagram.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Вконтакте магазина «Глейси»"><img src="img/vk.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Фейсбук магазина «Глейси»"><img src="img/fb.svg" width="32" height="32"></a></li>
@@ -235,13 +240,15 @@
   		</ul>
   	</footer>
   	<div class="popup active">
-  		<div class="popup-content">
+  		<div class="popup-content form-outside">
   			<form action="#" method="post" text-dark text-regular>
+  				<fieldset class="form-outside-list">
   				<h1 class="page-title h-index-form">Мы обязательно вам ответим!</h1>
   				<input type="text" name="name" id="name-field" placeholder="Как вас зовут?" required autocomplete="on" autofocus>
   				<input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required autocomplete="on">
   				<textarea name="comment" id="comment-field" placeholder="Напишите что-нибудь..."></textarea>
   				<input class="button-form" type="submit" value="Отправить">
+  				</fieldset>
   			</form>
   		</div>
   	</div>

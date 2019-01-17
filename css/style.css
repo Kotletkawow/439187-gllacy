@@ -23,8 +23,21 @@ body{
 }
 .header {
     padding-top: 10px;
-    display: flex;
 }
+.navigation {
+  display: flex;
+}
+.navigation-links {
+  display: flex;
+}
+.user-navigation {
+  display: flex;
+}
+.catalog-index {
+  display: flex;
+}
+
+
 .footer {
     padding: 0px 25px 35px;
 
@@ -41,7 +54,6 @@ body{
 }
 .footer-information {
   display: flex;
-  flex-direction: row;
 }
 .footer-list {
   display: flex;
@@ -84,12 +96,15 @@ body{
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
+  border-radius: 50px;
 }
 .button-form:hover,
 .button-form:focus,
 .button-form:active {
   color: #ffffff;
 }
+
+
 .button-form-light {
   text-align: center;
   background-color: #849d8f;
@@ -256,14 +271,14 @@ body{
     padding-right: 25px;
     padding-bottom: 40px;
 }
+.img-catalog {
+ border-radius: 150px;
+}
 
 .catalog-page-numbers {
   display: flex;
   justify-content: flex-end;
   }
-.numbers-item {
-  align-self: flex-end;
-}
 
 
 
@@ -272,6 +287,11 @@ body{
 
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
   align-items: flex-end;
 }
 
@@ -286,6 +306,7 @@ body{
 .advertising-item {
   flex-basis: 560px;
 }
+
 
 .catalog-promo {
   padding-top: 80px;
@@ -311,25 +332,26 @@ body{
 .features-item {
   display: flex;
   flex-direction: column;
-
 }
 .interactive {
   padding-top: 97px;
   display: flex;
   justify-content: space-between;
 }
-.interactive-list {
-  flex-basis: 560px;
-}
+
 .gallery {
   display: flex;
 }
 .gallery-list {
-  display: flex;
-  flex-direction: column;
   flex-basis: 275px;
+  padding-top: 30px;
+  padding-left: 20px;
 }
-
+.interactive-list {
+  flex-basis: 560px;
+  padding: 40px 30px;
+  
+}
 
 .map {
   min-height: 430px;
@@ -338,23 +360,29 @@ body{
   display: flex;
   justify-content: flex-end;
 }
-.contacts-adress {
-  align-self: flex-end;
+
+.form-outside {
+  display: flex;
+}
+.form-outside-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-regist-one {
+  display: flex;
+  flex-direction: column;
+}
+.form-regist-two {
+  display: flex;
+}
+
+.catalog-item-price {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.img-social {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  opacity: 0.1;
+}
 
