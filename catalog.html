@@ -15,30 +15,37 @@
   		 <img src="img/logo.svg" alt="«Глейси»" width="154" height="64">
   		</a>
   		<ul class="navigation-links">
-  			<li class="navigation-item text-bold link-light">
+  			<li class="navigation-item link-light">
   				<a class="link-light" href="catalog.html">Каталог</a>
   			</li>
-  			<li class="navigation-item text-bold link-light"><a class="link-light" href="delivery.payment.html">Доставка и оплата</a>
+  			<li class="navigation-item link-light"><a class="link-light" href="delivery.payment.html">Доставка и оплата</a>
   			</li>
-  			<li class="navigation-item text-bold"><a class="link-light" href="about.company.html">О Компании</a>
+  			<li class="navigation-item"><a class="link-light" href="about.company.html">О Компании</a>
   			</li>
   		</ul>
   		<ul class="user-navigation">
   			<li class="user-navigation-link"><button aria-label="Поиск">
   				<img src="img/loupe.svg" alt="Поиск по сайту" width="17" height="17"></button>
+  				<div class="popup">
+  					<div class="popup-content ">
+  						<form action="#" method="get" text-dark text-regular>
+  							<input class="text-regular" type="search" name="search" id="search" placeholder="Что ищем?" list="#" autocomplete="on" autofocus>
+  						</form>
+  					</div>
+  				</div>
   			</li>
-  			<li class="user-navigation-link"><a class="information-button link-light" href="#">
+  			<li class="user-navigation-link text-medium"><a class="information-button link-light" href="#">
   				<img src="img/entrance.svg" width="21" height="19">Вход</a>
   			</li>
-  			<li class="user-navigation-link"><a class="information-button link-dark" href="#" aria-label="Корзина товаров">
+  			<li class="user-navigation-link text-medium"><a class="information-button link-dark" href="#" aria-label="Корзина товаров">
   				<img src="img/basket-red.svg" width="21" height="20">2 товара</a>
   				<div class="popup">
   				<div class="popup-content basket-red">
   				<form action="#" method="post" text-dark text-regular">
-  					<table class="basket-red-table">
+  					<table class="basket-red-table text-regular">
   						<tr>
   							<td><button aria-label="Удаление товара из корзины"><img src="img/cross-small.svg" alt="Иконка удаления товара из корзины"></button></td>
-  							<td><a class="product-link link-light" href="#" aria-label="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+  							<td><a class="catalog-item-link link-light" href="#" aria-label="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
   								<span class="catalog-item-title-form">Пломбир с апельсиновым джемом</span></a>
   								<div class="catalog-item-img">
   									<a class="catalog-item-link-img" href="#" aria-label="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
@@ -49,7 +56,7 @@
   						</tr>
   						<tr>
   							<td><button aria-label="Удаление товара из корзины"><img src="img/cross-small.svg" alt="Иконка удаления товара из корзины"></button></td>
-  							<td><a class="product-link link-light" href="#" aria-label="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+  							<td><a class="catalog-item-link link-light" href="#" aria-label="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
   								<span class="catalog-item-title-form">Клубничный пломбир с присыпкой из белого шоколада</span></a>
   								<div class="catalog-item-img">
   									<a class="catalog-item-link-img" href="#" aria-label="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
@@ -60,7 +67,7 @@
   						</tr>
   					</table>
   					<hr>
-  					<span class="basket-cost text-bold">Итого:750руб.</span>
+  					<span class="basket-cost">Итого:750руб.</span>
   					<input class="button-form" type="submit" value="Оформить заказ">
   				</form>
   			</div>
@@ -77,15 +84,15 @@
   		<li><a class="link-light" href="#">Сливочное</a></li>
   </ul>
   <ul class="contacts">
-  	<li class="contacts-item text-bold">С 10 до 20, ежедневно</li>
-  	<li class="contacts-item text-bold"><span class="contacts-number">8 812 450-25-25</span></li>
+  	<li class="contacts-item">С 10 до 20, ежедневно</li>
+  	<li class="contacts-item"><span class="contacts-number">8 812 450-25-25</span></li>
   </ul>
   </section>
-  	<h1 class="page-title h-catalog text-bold">Сливочное мороженое</h1>
-  <section class="filters">
+  	<h1 class="page-title h-catalog">Сливочное мороженое</h1>
+  <section class="filters text-medium">
 	<ul class="percent">
 		<li class="percent-item">
-			<h2>Сортировка:</h2>
+			<h2 class="percent-item-title">Сортировка:</h2>
 			<form action="#" method="post">
 				<select name="sorting">
 					<option value="popularity">по популярности</option>
@@ -93,13 +100,13 @@
 			</form>
 		</li>
 		<li class="percent-item">
-			<h2>Цена: 100 руб. - 500 руб.</h2>
+			<h class="percent-item-title">Цена: 100 руб. - 500 руб.</h2>
 			<form action="#" method="post" oninput="slider=slider">
 			<input type="range" min="100" max="500" step="100" id="slider" name="slider">
 			</form>
 			</li>
 		<li class="percent-item">
-			<h2>Жирность:</h2>
+			<h2 class="percent-item-title">Жирность:</h2>
 			<form action="#" method="post"  checked>
 				<label>
 					<input type="radio" name="percents" value=" 0%"> 0%
@@ -110,7 +117,7 @@
 			</form>
 		</li>
 		<li class="percent-item">
-			<h2>Наполнители:</h2>
+			<h2 class="percent-item-title">Наполнители:</h2>
 			<form action="#" method="post">
 				<select name="sorting" multiple>
 					<option value="chocolate" selected> шоколадные</option>
@@ -298,7 +305,7 @@
   			</h4>
   		</li>
   	</ul>
-  	<ul class="catalog-page-numbers">
+  	<ul class="catalog-page-numbers text-medium">
 	<li><a class="button-form-light numbers-item" href="#">1</li>
 	<li><a class="button-form-light" href="#">2</li>
 	<li><a class="button-form-light" href="#">3</li>
@@ -307,7 +314,7 @@
 	</ul>
   	</section>
   </main>
-  <footer class="footer">
+  <footer class="footer text-regular">
   			<ul class="footer-social link-light">
   				<li><a class="social-button" href="#" aria-label="Твиттер магазина «Глейси»"><img src="img/twitter.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Инстаграм магазина «Глейси»"><img src="img/instagram.svg" width="32" height="32"></a></li>
@@ -319,7 +326,7 @@
   			<li class="footer-list">
   				<p>
   					<a class="information-link
-  					 information-link-cooperation text-bold link-light" href="#">
+  					 information-link-cooperation link-light" href="#">
   					<img class="footer-img" src="img/heart.svg" width="15" height="13">Для поставщиков</a></p>
   					<p><a class="information-link link-light" href="#">О производстве</a></p>
   					
@@ -330,8 +337,9 @@
   			</li>
   		</ul>
   		<ul class="footer-copyright">
-  			<li><a class="footer-logo-copyright text-regular link-light" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" aria-label="Контакты создателей данного сайта" width="108" height="39"></div>
-  				<li>Сделано в HTML Academy 2017</div></a>	
+  			<li class="footer-logo-copyright">
+  				<img src="img/logo-htmlacademy.svg" aria-label="Контакты создателей данного сайта" width="108" height="39"></li>
+  			<li class="footer-logo-copyright footer-logo-copyright-text" text-regular>Сделано в <a class="link-light" href="https://htmlacademy.ru">HTML Academy</a> 2017</li>
   		</ul>
   	</footer>
   </body>

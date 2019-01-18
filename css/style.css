@@ -7,6 +7,7 @@ body{
 
   font-size: 16px;
   line-height: 22px;
+  font-weight: 700;
   color: #ffffff;
   font-family: Roboto; sans-serif;
 
@@ -15,7 +16,7 @@ body{
   background-repeat: no-repeat;
 }
 .container {
-  width: 1146;
+  width: 1146px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -67,9 +68,13 @@ body{
   display: flex;
   flex-direction: column;
 }
-.footer-logo-copyright {
+.information-link {
+  font-size: 13px;
+  line-height: 18px;
+  }
+.footer-logo-copyright-text {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 18px;
   }
 
 
@@ -112,6 +117,7 @@ body{
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
+  border-radius: 50px;
 }
 .button-form-light:hover,
 .button-form-light:focus,
@@ -119,8 +125,18 @@ body{
   color: #000000;
 }
 .button-form-bg {
+  text-align: center;
+  background-color: #ed5b3d;
   font-size: 32px;
   line-height: 44px;
+  color: #ffffff;
+  border-radius: 50px;
+  flex-basis: 280px;
+}
+.button-form-two {
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 50px;
 }
 .visually-hidden {
   position: absolute;
@@ -146,16 +162,15 @@ body{
 }
 
 
+
+
+
 .user-navigation-link {
   font-size: 14px;
   line-height: 16px;
-  font-weight: 500;
   }
-.information-link-cooperation{
-  font-weight: 700;
-  }
+
 .catalog-item-link {
-	font-weight: 500;
 	color: #ffffff;
 }
 .catalog-item-link:hover,
@@ -163,10 +178,13 @@ body{
 .catalog-item-link:active {
 	color: #ed5b3d;
 }
-.information-link {
-  font-size: 13px;
-  line-height: 16px;
-  }
+
+
+.h-index {
+  text-align: center;
+  font-size: 60px;
+  line-height: 60px;
+}
 .h-catalog {
   font-size: 35px;
   line-height: 41px;
@@ -175,12 +193,12 @@ body{
   font-size: 16px;
   line-height: 18px;
   }
-.navigation-page {
+.navigation-menu {
   font-size: 14px;
   line-height: 16px;
   }
 .features-title,
-.news-link {
+.news-link { 
   font-size: 24px;
   line-height: 30px;
   }
@@ -203,24 +221,30 @@ body{
 .basket-cost {
   font-size: 15px;
   line-height: 18px;
-  font-weight: 700;
   }
 .advertising-item {
   font-size: 18px;
   line-height: 22px;
-  font-weight: 700;
 }
 .advertising-item-title {
   font-size: 35px;
   line-height: 41px;
-  font-weight: 700;
 }
 
 .filters {
   font-size: 16px;
   line-height: 18px;
+}
+.percent-item-title {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-item-title {
   font-weight: 500;
 }
+
+
 .navigation-links,
 .catalog-menu,
 .user-navigation,
@@ -241,8 +265,6 @@ body{
 }
 
 
-<<
-
 .title-catalog {
     padding-top: 20px;
     display: flex;
@@ -255,9 +277,14 @@ body{
 
 .filters {
     padding-top: 37px;
-    display: flex;
+  }
+.percent {
+  display: flex;
 }
-
+.percent-item {
+  display: flex;
+  flex-direction: column;
+}
 .catalog-list {
     padding-top: 40px;
     padding-bottom: 56px;
@@ -366,8 +393,15 @@ body{
 }
 .form-outside-list {
   display: flex;
+  text-align: center;
   flex-direction: column;
+  flex-basis: 480px;
+  align-content: center;
 }
+.form-outside-item {
+
+}
+
 
 .form-regist-one {
   display: flex;
@@ -375,6 +409,7 @@ body{
 }
 .form-regist-two {
   display: flex;
+  align-self: flex-end;
 }
 
 .catalog-item-price {
