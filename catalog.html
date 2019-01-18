@@ -29,7 +29,7 @@
   				<div class="popup">
   					<div class="popup-content ">
   						<form action="#" method="get" text-dark text-regular>
-  							<input class="text-regular" type="search" name="search" id="search" placeholder="Что ищем?" list="#" autocomplete="on" autofocus>
+  							<div><input class="text-regular" type="search" name="search" id="search" placeholder="Что ищем?" list="#" autocomplete="on" autofocus></div>
   						</form>
   					</div>
   				</div>
@@ -78,7 +78,7 @@
   </header>
   <section class="title-catalog">
   <ul class="navigation-page
-   text-regular link-light">
+   text-regular link-light" id="breadcrumbs">
   		<li><a class="link-light" href="#">Главная</a></li>
   		<li><a class="link-light" href="#">Каталог</a></li>
   		<li><a class="link-light" href="#">Сливочное</a></li>
@@ -88,7 +88,7 @@
   	<li class="contacts-item"><span class="contacts-number">8 812 450-25-25</span></li>
   </ul>
   </section>
-  	<h1 class="page-title h-catalog">Сливочное мороженое</h1>
+  	<h1 class="h-catalog">Сливочное мороженое</h1>
   <section class="filters text-medium">
 	<ul class="percent">
 		<li class="percent-item">
@@ -100,20 +100,18 @@
 			</form>
 		</li>
 		<li class="percent-item">
-			<h class="percent-item-title">Цена: 100 руб. - 500 руб.</h2>
+			<h2 class="percent-item-title">Цена: 100 руб. - 500 руб.</h2>
 			<form action="#" method="post" oninput="slider=slider">
-			<input type="range" min="100" max="500" step="100" id="slider" name="slider">
+			<div><input type="range" min="100" max="500" step="100" id="slider" name="slider"></div>
 			</form>
 			</li>
 		<li class="percent-item">
 			<h2 class="percent-item-title">Жирность:</h2>
 			<form action="#" method="post"  checked>
-				<label>
-					<input type="radio" name="percents" value=" 0%"> 0%
-					<input type="radio" name="percents" value=" до 10%" selected> до 10%
-					<input type="radio" name="percents" value=" до 30%"> до 30%
-					<input type="radio" name="percents" value=" выше 30%"> выше 30%
-				</label>
+				<label><input type="radio" name="percents" value=" 0%"> 0%</label>
+				<label><input type="radio" name="percents" value=" до 10%" selected> до 10%</label>
+				<label><input type="radio" name="percents" value=" до 30%"> до 30%</label>
+				<label><input type="radio" name="percents" value=" выше 30%"> выше 30%</label>
 			</form>
 		</li>
 		<li class="percent-item">
@@ -306,11 +304,13 @@
   		</li>
   	</ul>
   	<ul class="catalog-page-numbers text-medium">
-	<li><a class="button-form-light numbers-item" href="#">1</li>
-	<li><a class="button-form-light" href="#">2</li>
-	<li><a class="button-form-light" href="#">3</li>
-	<li><a class="button-form-light" href="#">4</li>
-	<li><a class="button-form-light" href="#">5</li>
+  	<li><a class="button-form-light numbers-item previous disabled" href="#previous"><img src="img/icon-right-small.svg" alt="Вперёд" width="17" height="17"></a></li>
+	<li><a class="button-form-light numbers-item current" href="#1">1</li>
+	<li><a class="button-form-light numbers-item" href="#2">2</li>
+	<li><a class="button-form-light numbers-item" href="#3">3</li>
+	<li><a class="button-form-light numbers-item" href="#4">4</li>
+	<li><a class="button-form-light numbers-item" href="#5">5</li>
+	<li><a class="button-form-light numbers-item next" href="#next"><img src="img/icon-right-small.svg" alt="Вперёд" width="17" height="17"></a></li>
 	</ul>
   	</section>
   </main>

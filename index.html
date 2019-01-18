@@ -25,7 +25,8 @@
   					<li><a class="catalog-menu-item link-light text-regular" href="#">Фруктовый лёд</a></li>
   					<li><a class="catalog-menu-item link-light text-regular" href="#">Мелорин</a></li>
   				</ul>
-  			</li>"><a class="link-light" href="delivery.payment.html">Доставка и оплата</a>
+  			</li>
+  			<li class="navigation-item link-light"><a class="link-light" href="delivery.payment.html">Доставка и оплата</a>
   			</li>
   			<li class="navigation-item link-light"><a class="link-light" href="about.company.html">О Компании</a>
   			</li>
@@ -36,7 +37,7 @@
   				<div class="popup">
   					<div class="popup-content ">
   						<form action="#" method="get" text-dark text-regular>
-  							<input class="text-regular" type="search" name="search" id="search" placeholder="Что ищем?" list="#" autocomplete="on" autofocus>
+  							<div><input class="form-field text-regular" type="search" name="search" id="search" placeholder="Что ищем?" list="#" autocomplete="on" autofocus></div>
   						</form>
   					</div>
   				</div>
@@ -47,9 +48,9 @@
   					<div class="popup-content">
   						<form class="" action="#" method="post" text-dark text-regular>
   							<fieldset class="form-regist-one">
-  							<input type="text" name="email" id="email-field" placeholder="Электронная почта?" required  autocomplete="on" autofocus>
-  							<input type="text" name="password" id="password-field" placeholder="Пароль" required  autocomplete="on">
-  							<input class="button-form" type="submit" value="Войти">
+  							<div><input class="form-field" type="text" name="email" id="email-field" placeholder="Электронная почта?" required  autocomplete="on" autofocus></div>
+  							<div><input class="form-field" type="text" name="password" id="password-field" placeholder="Пароль" required  autocomplete="on"></div>
+  							<div><input class="button-form" type="submit" value="Войти"></div>
   							<ul class="form-regist-two">
   								<li class="form-regist-item"><a class="link-dark" href="#">Забыли пароль?</a></li>
   								<li class="form-regist-item"><a class="link-dark" href="#">Новая регистрация</a></li>
@@ -67,7 +68,7 @@
   <section class="promo">
     <article>
 			<h1 class="h-index">Крем-брюле и пломбир с малиновым джемом</h1>
-			<input class="button-form-bg" type="submit" value="Давайте оба!">
+			<div><input class="button-form-bg" type="submit" value="Давайте оба!"></div>
 	</article>
   </section>
   <ul class="contacts">
@@ -76,18 +77,18 @@
   </ul>
   <section class="advertising">
 	<ul class="advertising-list">
-		<li class="advertising-item">
+		<li class="advertising-item-one">
 			<article>
 			<h2 class="advertising-item-title">Малинка даром!</h2>
 			<p>При покупке 2 кг любого фруктового мороженого, добавим в вам заказ банку малиного варенья бесплатно.</p>
-			<input class="button-form button-form-two" type="submit" value="Хочу варенье!">
+			<div><input class="button-form button-form-two" type="submit" value="Хочу варенье!"></div>
 			</article>
 		</li>
-		<li class="advertising-item">
+		<li class="advertising-item-two">
 			<article class="">
 			<h2 class="advertising-item-title">Шоколадки даром!</h2>
 			<p>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-			<input class="button-form button-form-two" type="submit" value="Хочу шоколадки!">
+			<div><input class="button-form button-form-two" type="submit" value="Хочу шоколадки!"></div>
 			</article>
 		</li>
 	</ul>
@@ -191,8 +192,8 @@
   	<p class="appointment-into text-regular text-dark">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
   	<div class="form-inside">
   		<form action="#" method="post">
-  			<input class="text-regular"type="text" name="login" id="login-field" placeholder="Электронная почта" required  autocomplete="on" autofocus>
-  			<input class="button-form" type="submit" value="Отправить">
+  			<div><input class="text-regular"type="text" name="login" id="login-field" placeholder="Электронная почта" required  autocomplete="on" autofocus></div>
+  			<div><input class="button-form" type="submit" value="Отправить"></div>
   		</form>
   	</div>
   	</div>
@@ -205,7 +206,7 @@
 	<h6 class="text-regular">Для заказов по телефону:</h6>
 	<p>8 812 450-25-25</p>
 	<p><span class="text-regular">(с 10 до 20 ежедневно)</span></p>
-	<input class="button-form" type="submit" value="Форма обратной связи">
+	<div><input class="button-form" type="submit" value="Форма обратной связи"></div>
 	</div>
 </div>
 <footer class="footer text-regular">
@@ -234,18 +235,5 @@
   			<li class="footer-logo-copyright footer-logo-copyright-text text-regular" text-regular>Сделано в <a class="link-light" href="https://htmlacademy.ru">HTML Academy</a> 2017</li>
   		</ul>
   	</footer>
-  	<div class="popup active">
-  		<div class="popup-content">
-  			<form class="form-outside" action="#" method="post" text-dark text-regular>
-  				<fieldset class="form-outside-list">
-  				<h1 class="page-title h-index-form">Мы обязательно вам ответим!</h1>
-  				<input class="text-regular" type="text" name="name" id="name-field" placeholder="Как вас зовут?" required autocomplete="on" autofocus>
-  				<input class="text-regular" type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required autocomplete="on">
-  				<textarea class="text-regular" name="comment" id="comment-field" placeholder="Напишите что-нибудь..."></textarea>
-  				<input class="button-form" type="submit" value="Отправить">
-  				</fieldset>
-  			</form>
-  		</div>
-  	</div>
   </body>
 </html>
