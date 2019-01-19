@@ -22,6 +22,11 @@ body{
   flex-direction: column;
   padding: 0px 25px;
 }
+
+
+
+
+
 .header {
     padding-top: 10px;
 }
@@ -29,14 +34,49 @@ body{
   display: flex;
 }
 .navigation-links {
-  display: flex;
 }
 .user-navigation {
-  display: flex;
 }
+
 .catalog-index {
-  display: flex;
 }
+.user-navigation-link {
+  font-size: 14px;
+  line-height: 16px;
+  }
+.navigation-item {
+  font-size: 16px;
+  line-height: 18px;
+  }
+.catalog-menu {
+  font-size: 14px;
+  line-height: 16px;
+  }
+
+.form-regist-one {
+  display: flex;
+  flex-direction: column;
+}
+.form-regist-two {
+  display: flex;
+  align-self: flex-end;
+}
+
+
+
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+
+
+
+
 
 
 .footer {
@@ -63,7 +103,7 @@ body{
   flex-direction: column;
 }
 .footer-item {
-  padding-left: 27px; 
+  padding-left: 30px; 
 }
 }
 .footer-copyright {
@@ -78,6 +118,9 @@ body{
   font-size: 12px;
   line-height: 18px;
   }
+
+
+
 
 
 .link-light {
@@ -132,12 +175,27 @@ body{
   color: #ffffff;
   border-radius: 50px;
   flex-basis: 280px;
+  align-self: flex-end;
+
 }
 .button-form-two {
   font-size: 18px;
   line-height: 24px;
   border-radius: 50px;
 }
+.catalog-item-link {
+  color: #ffffff;
+}
+.catalog-item-link:hover,
+.catalog-item-link:focus,
+.catalog-item-link:active {
+  color: #ed5b3d;
+}
+
+
+
+
+
 .form-field {
   width: 100%;
   height: 100%;
@@ -165,57 +223,131 @@ body{
   color: #000000;
 }
 
-
-
-
-
-.user-navigation-link {
-  font-size: 14px;
-  line-height: 16px;
-  }
-
-.catalog-item-link {
-	color: #ffffff;
-}
-.catalog-item-link:hover,
-.catalog-item-link:focus,
-.catalog-item-link:active {
-	color: #ed5b3d;
+.point-none {
+  list-style: none;
 }
 
+
+
+
+.promo {
+  padding-top: 285px;
+
+  display: flex;
+  justify-content: center;
+  background-image: url("адрес-картинки");
+  background-size: 
+}
 
 .h-index {
   text-align: center;
   font-size: 60px;
   line-height: 60px;
 }
-.h-catalog {
-  font-size: 35px;
-  line-height: 41px;
-  }
-.navigation-item {
-  font-size: 16px;
-  line-height: 18px;
-  }
-.navigation-menu {
-  font-size: 14px;
-  line-height: 16px;
+
+.advertising {
+  padding-top: 85px;
+  display: flex;
+}
+.advertising-list {
+  display: flex;
+  justify-content: space-between;
+}
+.advertising-item {
+  flex-basis: 560px;
+}
+.advertising-item-one {
+
+  background-image: url("img/background-raspberry.jpg");
+}
+.advertising-item-two {
+}
+
+.catalog-promo {
+  padding-top: 80px;
+}
+.catalog-list-promo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog-item-promo {
+  flex-basis: 267px;
+  padding-right: 25px;
+}
+
+.features {
+  padding-top: 73px;
+
   }
 .features-title,
 .news-link { 
   font-size: 24px;
   line-height: 30px;
   }
-.catalog-item-style {
-  font-size: 45px;
-  line-height: 45px;
-  }
+.features-list {
+  display: flex;
+}
+.features-title {
+  padding-left: 25px;
+  width: 1010px;
+}
+.features-item {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  padding-left: 25px;
+}
+
+.interactive {
+  padding-top: 95px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery {
+  display: flex;
+}
+.gallery-list {
+  max-width: 275px;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+.interactive-list {
+  flex-basis: 560px;
+  padding: 40px 25px;
+  
+}
+
+.map {
+  min-height: 430px;
+  padding-top: 190px;
+  padding-bottom: 130px;
+  padding-left: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.img-map {
+  width: 100%;
+  position: absolute;
+}
+.contacts-adress {
+  color: #000000;
+  background-color: #fefefe;
+  background-size: cover;
+  border-radius: 20px;
+  padding-left: 55px;
+  padding-right: 25px;
+}
+
+
 
 
 
 .basket-red {
   display: flex;
   justify-content: flex-end;
+  position: absolute;
 }
 .basket-red-table {
   font-size: 13px;
@@ -226,6 +358,18 @@ body{
   font-size: 15px;
   line-height: 18px;
   }
+
+.title-catalog {
+    padding-top: 20px;
+    display: flex;
+}
+.h-catalog {
+  font-size: 35px;
+  line-height: 41px;
+  padding-top: 14px;
+  display: flex;
+}
+
 .advertising-item {
   font-size: 18px;
   line-height: 22px;
@@ -238,61 +382,18 @@ body{
 .filters {
   font-size: 16px;
   line-height: 18px;
+
+  padding-top: 35px;
 }
 .percent-item-title {
   font-size: 14px;
   line-height: 16px;
 }
 
-.catalog-item-title {
-  font-weight: 500;
-}
 
-
-.advertising-list,
-.navigation-links,
-.catalog-menu,
-.user-navigation,
-.contacts,
-.catalog-list,
-.features-list,
-.footer-social,
-.navigation-page,
-.percent,
-.footer-information,
-.form-regist-item,
-.information-link,
-.catalog-page-numbers,
-.advertising-item,
-.footer-copyright,
-.catalog-item-promo {
-  list-style: none;
-}
-
-
-.title-catalog {
-    padding-top: 20px;
-    display: flex;
-}
-
-.h-catalog {
-    padding-top: 14px;
-    display: flex;
-}
-
-.filters {
-    padding-top: 37px;
-  }
-.percent {
-  display: flex;
-}
-.percent-item {
-  display: flex;
-  flex-direction: column;
-}
 .catalog-list {
     padding-top: 40px;
-    padding-bottom: 56px;
+    padding-bottom: 55px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -301,21 +402,15 @@ body{
     padding-right: 25px;
     padding-bottom: 40px;
 }
+.catalog-item-title {
+  font-weight: 500px;
+}
+.catalog-item-style {
+  font-size: 45px;
+  line-height: 45px;
+  }
 .img-catalog {
- border-radius: 150px;
-}
-
-.catalog-promo {
-  padding-top: 80px;
-  display: flex;
-}
-.catalog-list-promo {
-  display: flex;
-  justify-content: space-between;
-}
-.catalog-item-promo {
-  flex-basis: 267px;
-  padding-right: 25px;
+ border-radius: 100%;
 }
 
 .catalog-page-numbers {
@@ -328,6 +423,7 @@ body{
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
+
   }
 .numbers-item:hover,
 .numbers-item:focus {
@@ -354,122 +450,15 @@ body{
   padding-top: 5px;
 }
 
-.promo {
-  padding-top: 286px;
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-image: url("адрес-картинки");
-  background-size: 
-}
-.contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.advertising {
-  padding-top: 85px;
-  display: flex;
-}
-.advertising-list {
-  display: flex;
-  justify-content: space-between;
-}
-.advertising-item {
-  flex-basis: 560px;
-}
-.advertising-item-one {
-}
-.advertising-item-two {
-
-}
-
-
-.catalog-promo {
-  padding-top: 80px;
-  display: flex;
-}
-.catalog-list-promo {
-  display: flex;
-  justify-content: space-between;
-}
-.catalog-item-promo {
-  flex-basis: 267px;
-  padding-right: 26px;
-}
-
-.features {
-  padding-top: 73px;
-  display: flex;
-  flex-direction: column;
-
-  }
-.features-list {
-  display: flex;
-}
-.features-item {
-  display: flex;
-  flex-direction: column;
-  padding-top: 97px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.interactive {
-  padding-top: 97px;
-  display: flex;
-  justify-content: space-between;
-}
-.gallery {
-  display: flex;
-}
-.gallery-list {
-  flex-basis: 275px;
-  padding-top: 25px;
-  padding-left: 20px;
-}
-.interactive-list {
-  flex-basis: 560px;
-  padding: 40px 25px;
-  
-}
-
-.map {
-  min-height: 430px;
-  padding-top: 190px;
-  padding-bottom: 130px;
-  padding-left: 25px;
-  display: flex;
-  justify-content: flex-end;
-}
-.contacts-adress {
-  color: #000000;
-  background-color: #fefefe;
-  background-size: cover;
-  border-radius: 20px;
-  padding-left: 55px;
-  padding-right: 25px;
-}
-
-
-.form-regist-one {
-  display: flex;
-  flex-direction: column;
-}
-.form-regist-two {
-  display: flex;
-  align-self: flex-end;
-}
-
-.catalog-item-price {
-}
 
 
 .img-social {
   box-shadow: 0 0 100px rgba(0,0,0,0.5);
 }
 
-  {background-image: url("адрес-картинки");
+  {background-image: url("");
   background-size:} 
+
+.popup-regist:target {
+  display: block;
+}

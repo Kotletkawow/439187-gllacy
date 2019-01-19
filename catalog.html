@@ -11,10 +11,10 @@
   <main class="container">
    <header class="header">
   	<nav class="navigation">
-  		<a class="header-logo">
+  		<a class="header-logo" href="index.html">
   		 <img src="img/logo.svg" alt="«Глейси»" width="154" height="64">
   		</a>
-  		<ul class="navigation-links">
+  		<ul class="navigation-links point-none">
   			<li class="navigation-item link-light">
   				<a class="link-light" href="catalog.html">Каталог</a>
   			</li>
@@ -23,12 +23,12 @@
   			<li class="navigation-item"><a class="link-light" href="about.company.html">О Компании</a>
   			</li>
   		</ul>
-  		<ul class="user-navigation">
+  		<ul class="user-navigation point-none">
   			<li class="user-navigation-link"><button aria-label="Поиск">
   				<img src="img/loupe.svg" alt="Поиск по сайту" width="17" height="17"></button>
   				<div class="popup">
-  					<div class="popup-content ">
-  						<form action="#" method="get" text-dark text-regular>
+  					<div class="popup-search">
+  						<form class="text-dark text-regular" action="#" method="get">
   							<div><input class="text-regular" type="search" name="search" id="search" placeholder="Что ищем?" list="#" autocomplete="on" autofocus></div>
   						</form>
   					</div>
@@ -40,7 +40,7 @@
   			<li class="user-navigation-link text-medium"><a class="information-button link-dark" href="#" aria-label="Корзина товаров">
   				<img src="img/basket-red.svg" width="21" height="20">2 товара</a>
   				<div class="popup">
-  				<div class="popup-content basket-red">
+  				<div class="popup-basket-red">
   				<form action="#" method="post" text-dark text-regular">
   					<table class="basket-red-table text-regular">
   						<tr>
@@ -49,7 +49,7 @@
   								<span class="catalog-item-title-form">Пломбир с апельсиновым джемом</span></a>
   								<div class="catalog-item-img">
   									<a class="catalog-item-link-img" href="#" aria-label="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-  									<img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="33" height="33"></a>
+  									<img class="img-catalog" src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="33" height="33"></a>
   								</div></td>
   							<td>1,5 кг х <span>200руб.</span></td>
   							<td>300 руб.</td>
@@ -60,13 +60,12 @@
   								<span class="catalog-item-title-form">Клубничный пломбир с присыпкой из белого шоколада</span></a>
   								<div class="catalog-item-img">
   									<a class="catalog-item-link-img" href="#" aria-label="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-  										<img src="img/product-3.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="33" height="33"></a>
+  										<img class="img-catalog" src="img/product-3.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="33" height="33"></a>
   								</div></td>
   							<td>1,5 кг х <span>300руб.</span></td>
   							<td>450 руб.</td>
   						</tr>
   					</table>
-  					<hr>
   					<span class="basket-cost">Итого:750руб.</span>
   					<input class="button-form" type="submit" value="Оформить заказ">
   				</form>
@@ -76,21 +75,21 @@
   		</ul>
   	</nav>
   </header>
+  <ul class="contacts point-none">
+  	<li class="contacts-item">С 10 до 20, ежедневно</li>
+  	<li class="contacts-item"><span class="contacts-number">8 812 450-25-25</span></li>
+  </ul>
   <section class="title-catalog">
   <ul class="navigation-page
-   text-regular link-light" id="breadcrumbs">
+   text-regular link-light point-none" id="breadcrumbs">
   		<li><a class="link-light" href="#">Главная</a></li>
   		<li><a class="link-light" href="#">Каталог</a></li>
   		<li><a class="link-light" href="#">Сливочное</a></li>
   </ul>
-  <ul class="contacts">
-  	<li class="contacts-item">С 10 до 20, ежедневно</li>
-  	<li class="contacts-item"><span class="contacts-number">8 812 450-25-25</span></li>
-  </ul>
-  </section>
-  	<h1 class="h-catalog">Сливочное мороженое</h1>
+</section>
+ <h1 class="h-catalog">Сливочное мороженое</h1>
   <section class="filters text-medium">
-	<ul class="percent">
+	<ul class="percent point-none">
 		<li class="percent-item">
 			<h2 class="percent-item-title">Сортировка:</h2>
 			<form action="#" method="post">
@@ -133,7 +132,7 @@
 </section>
   	<section class="catalog">
   	<h3 class="visually-hidden">Каталог</h3>
-  	<ul class="catalog-list">
+  	<ul class="catalog-list point-none">
   		<li class="catalog-item">
   			<div class="catalog-item-img">
   			<a class="catalog-item-link-img" href="#" aria-label="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
@@ -303,7 +302,7 @@
   			</h4>
   		</li>
   	</ul>
-  	<ul class="catalog-page-numbers text-medium">
+  	<ul class="catalog-page-numbers text-medium point-none">
   	<li><a class="button-form-light numbers-item previous disabled" href="#previous"><img src="img/icon-right-small.svg" alt="Вперёд" width="17" height="17"></a></li>
 	<li><a class="button-form-light numbers-item current" href="#1">1</li>
 	<li><a class="button-form-light numbers-item" href="#2">2</li>
@@ -315,14 +314,13 @@
   	</section>
   </main>
   <footer class="footer text-regular">
-  			<ul class="footer-social link-light">
+  			<ul class="footer-social link-light point-none">
   				<li><a class="social-button" href="#" aria-label="Твиттер магазина «Глейси»"><img src="img/twitter.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Инстаграм магазина «Глейси»"><img src="img/instagram.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Вконтакте магазина «Глейси»"><img src="img/vk.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Фейсбук магазина «Глейси»"><img src="img/fb.svg" width="32" height="32"></a></li>
   			</ul>
-  		<ul class="footer-information
-  		 text-regular">
+  		<ul class="footer-information text-regular point-none">
   			<li class="footer-list">
   				<p>
   					<a class="information-link
@@ -336,10 +334,10 @@
   				<p><a class="information-link link-light" href="#">Экологические стандарты</a></p>
   			</li>
   		</ul>
-  		<ul class="footer-copyright">
+  		<ul class="footer-copyright point-none">
   			<li class="footer-logo-copyright">
   				<img src="img/logo-htmlacademy.svg" aria-label="Контакты создателей данного сайта" width="108" height="39"></li>
-  			<li class="footer-logo-copyright footer-logo-copyright-text" text-regular>Сделано в <a class="link-light" href="https://htmlacademy.ru">HTML Academy</a> 2017</li>
+  			<li class="footer-logo-copyright footer-logo-copyright-text text-regular">Сделано в <a class="link-light" href="https://htmlacademy.ru">HTML Academy</a> 2017</li>
   		</ul>
   	</footer>
   </body>

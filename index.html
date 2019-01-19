@@ -11,31 +11,35 @@
   <main class="container">
    <header class="header">
   	<nav class="navigation">
-  		<a class="header-logo">
+  		<a class="header-logo" href="index.html">
   		 <img src="img/logo.svg" alt="«Глейси»" width="154" height="64">
   		</a>
-  		<ul class="navigation-links">
+  		<ul class="navigation-links point-none">
   			<li class="navigation-item
   			 catalog-index">
   				<a class="link-light" href="catalog.html">Каталог</a>
-  				<ul class="catalog-menu link-light">
+  				<!--
+  				<div class="catalog-menu-target">
+  				<ul class="catalog-menu link-light point-none">
   					<li><a class="catalog-menu-item link-light text-regular" href="#"><b>Новинки</b></a></li><hr>
   					<li><a class="catalog-menu-item link-light text-regular" href="#">Сливочное</a></li>
   					<li><a class="catalog-menu-item link-light text-regular" href="#">Щербеты</a></li>
   					<li><a class="catalog-menu-item link-light text-regular" href="#">Фруктовый лёд</a></li>
   					<li><a class="catalog-menu-item link-light text-regular" href="#">Мелорин</a></li>
   				</ul>
+  				</div>
+  				!-->
   			</li>
   			<li class="navigation-item link-light"><a class="link-light" href="delivery.payment.html">Доставка и оплата</a>
   			</li>
   			<li class="navigation-item link-light"><a class="link-light" href="about.company.html">О Компании</a>
   			</li>
   		</ul>
-  		<ul class="user-navigation">
+  		<ul class="user-navigation point-none">
   			<li class="user-navigation-link"><button class="information-button" aria-label="Поиск">
   				<img src="img/loupe.svg" alt="Поиск по сайту" width="17" height="17"></button>
   				<div class="popup">
-  					<div class="popup-content ">
+  					<div class="popup-search">
   						<form action="#" method="get" text-dark text-regular>
   							<div><input class="form-field text-regular" type="search" name="search" id="search" placeholder="Что ищем?" list="#" autocomplete="on" autofocus></div>
   						</form>
@@ -44,39 +48,40 @@
   			</li>
   			<li class="user-navigation-link"><a class="information-button link-light text-medium" href="#">
   				<img src="img/entrance.svg" width="21" height="19">Вход</a>
+  				<!--
   				<div class="popup">
-  					<div class="popup-content">
+  					<div class="popup-regist">
   						<form class="" action="#" method="post" text-dark text-regular>
   							<fieldset class="form-regist-one">
   							<div><input class="form-field" type="text" name="email" id="email-field" placeholder="Электронная почта?" required  autocomplete="on" autofocus></div>
   							<div><input class="form-field" type="text" name="password" id="password-field" placeholder="Пароль" required  autocomplete="on"></div>
   							<div><input class="button-form" type="submit" value="Войти"></div>
-  							<ul class="form-regist-two">
+  							<ul class="form-regist-two point-none">
   								<li class="form-regist-item"><a class="link-dark" href="#">Забыли пароль?</a></li>
   								<li class="form-regist-item"><a class="link-dark" href="#">Новая регистрация</a></li>
   							</ul>
   							</fieldset>
   						</form>
   					</div>
-  				</div>
+  				</div> !-->
   			</li>
   			<li class="user-navigation-link"><a class="information-button link-light text-medium" href="#" aria-label="Корзина товаров">
   				<img src="img/basket.svg" width="21" height="20">Пусто</a></li>
   		</ul>
   	</nav>
   </header>
+  <ul class="contacts point-none">
+  	<li class="contacts-item">С 10 до 20, ежедневно</li>
+  	<li class="contacts-item"><span class="contacts-number">8 812 450-25-25</span></li>
+  </ul>
   <section class="promo">
     <article>
 			<h1 class="h-index">Крем-брюле и пломбир с малиновым джемом</h1>
 			<div><input class="button-form-bg" type="submit" value="Давайте оба!"></div>
 	</article>
   </section>
-  <ul class="contacts">
-  	<li class="contacts-item">С 10 до 20, ежедневно</li>
-  	<li class="contacts-item"><span class="contacts-number">8 812 450-25-25</span></li>
-  </ul>
   <section class="advertising">
-	<ul class="advertising-list">
+	<ul class="advertising-list point-none">
 		<li class="advertising-item-one">
 			<article>
 			<h2 class="advertising-item-title">Малинка даром!</h2>
@@ -94,9 +99,8 @@
 	</ul>
 </section>
   <section class="catalog catalog-promo">
-  	<ul class="catalog-list-promo">
+  	<ul class="catalog-list-promo point-none">
   		<li class="catalog-item-promo">
-  			<img src="img/hit.svg" hred="#">
   			<div class="catalog-item-img">
   			<a class="catalog-item-link-img" href="#" aria-label="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
   			<img class="img-catalog" src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267"></a>
@@ -157,7 +161,7 @@
   	 <section class="features">
         <h4 class="visually-hidden">Преимущества</h4>
   			<p class="features-title text-medium text-dark">Магазин Глейси - это офлайн-магазин по продаже мороженого собственного производства на развес</p>
-  		<ul class="features-list text-dark text-regular">
+  		<ul class="features-list text-dark text-regular point-none">
   		<li class="features-item">
   			<p class="features-item text-regular">
   			<div class="instruments-img">
@@ -199,6 +203,7 @@
   	</div>
   </section>
 </main>
+ <!-- <img class="img-map" src="img/map.jpg" alt="Карта"> !-->
 <div class="map">
 	<div class="contacts-adress">
 	<h6 class="text-regular">Адрес главного офиса и офлайн-магазина:</h6>
@@ -206,17 +211,17 @@
 	<h6 class="text-regular">Для заказов по телефону:</h6>
 	<p>8 812 450-25-25</p>
 	<p><span class="text-regular">(с 10 до 20 ежедневно)</span></p>
-	<div><input class="button-form" type="submit" value="Форма обратной связи"></div>
+	<button class="button-form" type="submit" value="Форма обратной связи"></button>
 	</div>
 </div>
 <footer class="footer text-regular">
-  			<ul class="footer-social link-light">
+  			<ul class="footer-social link-light point-none">
   				<li><a class="social-button" href="#" aria-label="Твиттер магазина «Глейси»"><img class="img-social" src="img/twitter.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Инстаграм магазина «Глейси»"><img src="img/instagram.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Вконтакте магазина «Глейси»"><img src="img/vk.svg" width="32" height="32"></a></li>
   				<li><a class="social-button" href="#" aria-label="Фейсбук магазина «Глейси»"><img src="img/fb.svg" width="32" height="32"></a></li>
   			</ul>
-  		<ul class="footer-information">
+  		<ul class="footer-information text-regular point-none">
   			<li class="footer-list">
   				<p>
   					<a class="information-link link-light text-bold" href="#">
@@ -229,11 +234,27 @@
   				<p><a class="information-link link-light" href="#">Экологические стандарты</a></p>
   			</li>
   		</ul>
-  		<ul class="footer-copyright">
+  		<ul class="footer-copyright point-none">
   			<li class="footer-logo-copyright">
   				<img src="img/logo-htmlacademy.svg" aria-label="Контакты создателей данного сайта" width="108" height="39"></li>
-  			<li class="footer-logo-copyright footer-logo-copyright-text text-regular" text-regular>Сделано в <a class="link-light" href="https://htmlacademy.ru">HTML Academy</a> 2017</li>
+  			<li class="footer-logo-copyright footer-logo-copyright-text text-regular text-regular">Сделано в <a class="link-light" href="https://htmlacademy.ru">HTML Academy</a> 2017</li>
   		</ul>
   	</footer>
   </body>
 </html>
+<!--
+  	<div class="popup active">
+  		<div class="popup-content">
+  			<form class="form-outside" action="#" method="post" text-dark text-regular>
+  				<fieldset class="form-outside-list">
+  				<h1 class="page-title h-index-form">Мы обязательно вам ответим!</h1>
+  				<button aria-label="Зыкрытие"><img src="img/cross-small.svg" alt="Иконка закрытия из формы"></button>
+  				<div><input class="form-field text-regular" type="text" name="name" id="name-field" placeholder="Как вас зовут?" required autocomplete="on" autofocus></div>
+  				<div><input class="form-field text-regular" type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?" required autocomplete="on"></div>
+  				<div><textarea class="form-field text-regular" name="comment" id="comment-field" placeholder="Напишите что-нибудь..."></textarea></div>
+  				<div><input class="button-form" type="submit" value="Отправить"></div>
+  				</fieldset>
+  			</form>
+  		</div>
+  	</div> !-->
+
